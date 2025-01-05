@@ -2,5 +2,4 @@ Semantic: "Semantic HTML" is the use of HTML tags that provide
 meaning and structure to web content by clearly describing 
 the role of the content within a webpage.
 Instead of using generic tags such as <div> for everything,
-semantic HTML uses more descriptive tags like <header>, 
-<article>, etc. To improve code redability. 
+semantic HTML uses more descriptive tags like <header>, <article>, etc. To improve code redability. 
