@@ -3,3 +3,22 @@ meaning and structure to web content by clearly describing
 the role of the content within a webpage.
 Instead of using generic tags such as <div> for everything,
 semantic HTML uses more descriptive tags like <header>, <article>, etc. To improve code redability. 
+When chosing semantic names for variables, use short meaningful names, and avoid the use of spaces and special characters. Use naming convention instead.
+
+Naming conventions:
+-camel case: each word within a compound word name is capitalized except for the first word.
+Examples: julySales, getNewReport()
+-Pascal Case: each word within a compound word name is capitalized.
+Examples: JulySales, GetNewReport()
+-Underscore or Snake Case: each word within a compound word name is separated by an underscore.
+Examples: july_sales, get_new_report()
+-Kebab Case: each word is separated by a hyphen/minus sign.
+Examples: july-sales, get-new-report()
+
+"Whenever you develop code in a new language, get comfortable with the variable naming conventions and always check with your team if your organization ever deviates from the standard. It will make your code more readable and help your code blend with all of the code commits, pulls and merges."
+- theserverside.com
+
+Optional Resources:
+JavaScript Variable Naming - MDN
+Clean Coding - Dev.to
+A guide to common variable naming conventions - TheServerSide.com
