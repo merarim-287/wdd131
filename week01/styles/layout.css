@@ -2,50 +2,53 @@ body {
     display: grid;
     height: 100vh;
     grid-template: auto 1fr auto / 300px 1fr auto;
-}
+  }
   
-.header .parent {
+  .header .parent {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background: darkgray;
     padding: 2rem;
     grid-column: 1 / 4;
-}
- 
-.header .box {
-    flex: 1 1 150px; /* Stretching: */
+  }
+  
+  .header .box {
+    flex: 1 1 150px;
     margin: 5px;
-}
-
-.navbar parent{
+  }
+  
+  .navbar .parent {
     display: flex;
     flex-wrap: wrap;
     place-items: center;
     background: black;
     grid-column: 1 / 2;
     color: white;
-}
-
-.navbar .box {
-    flex: 1 1 150px; 
+  }
+  
+  .navbar .box {
+    flex: 1 1 150px;
     margin: 5px;
-}
-
-.main {
+  }
+  
+  .main {
     background: rgb(236, 233, 233);
-}
+    grid-column: 2 / 3;
+  }
   
-.right-sidebar {
+  .right-sidebar {
     background: white;
-    color:black;
-}
+    color: black;
+    grid-column: 3 / 4;
+  }
   
-.footer {
+  .footer {
     background: black;
     padding: 2rem;
     text-align: center;
     color: white;
-}
+    grid-column: 1 / 4;
+  }
   
  
