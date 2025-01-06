@@ -1,0 +1,81 @@
+Semantic: "Semantic HTML" is the use of HTML tags that provide
+meaning and structure to web content by clearly describing 
+the role of the content within a webpage.
+Instead of using generic tags such as <div> for everything,
+semantic HTML uses more descriptive tags like <header>, <article>, etc. To improve code redability. 
+When chosing semantic names for variables, use short meaningful names, and avoid the use of spaces and special characters. Use naming convention instead.
+
+Naming conventions:
+-camel case: each word within a compound word name is capitalized except for the first word.
+Examples: julySales, getNewReport()
+-Pascal Case: each word within a compound word name is capitalized.
+Examples: JulySales, GetNewReport()
+-Underscore or Snake Case: each word within a compound word name is separated by an underscore.
+Examples: july_sales, get_new_report()
+-Kebab Case: each word is separated by a hyphen/minus sign.
+Examples: july-sales, get-new-report()
+
+"Whenever you develop code in a new language, get comfortable with the variable naming conventions and always check with your team if your organization ever deviates from the standard. It will make your code more readable and help your code blend with all of the code commits, pulls and merges."
+- theserverside.com
+
+Optional Resources:
+JavaScript Variable Naming - MDN
+Clean Coding - Dev.to
+A guide to common variable naming conventions - TheServerSide.com
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Environment_setup/Dealing_with_files
+
+-Instead of spaces, many developers use a separator character such as a hyphen (-) or underscore (_). It's advisable to separate words with hyphens rather than underscores: my-file.html vs. my_file.html
+
+-The most common things we'll have on any website project we create are an index HTML file and folders to contain images, style files, and script files:
+
+index.html: This file will generally contain your homepage content, that is, the text and images that people see when they first go to your site.
+
+images folder: This folder will contain all the images that you use on your site.
+
+styles folder: This folder will contain the CSS code used to style your content (for example, setting text and background colors).
+
+scripts folder: This folder will contain all the JavaScript code used to add interactive functionality to your site (e.g. buttons that load data when clicked).
+
+-Note: The Windows file system tends to use backslashes, not forward slashes, e.g. C:\Windows. This doesn't matter in HTML — even if you are developing your website on Windows, you should still use forward slashes in your code.
+
+--You will be expected to follow these naming conventions throughout the course.--
+
+-Use all lowercase syntax, e.g., products.html
+
+-Do NOT use spaces in file and folder names. Use hyphens instead, e.g., design-document.html
+
+-Do NOT use special characters, e.g., <,>, \, /, #, ?, !
+
+-File and folder names should be as short and meaningful (semantic) as possible, e.g., winter-scene-sm.png vs. image13-v123523brokenbranchlifeimagery w200x200.png
+
+-In this class, the standard folder names for our sites/sub-folders are:
+styles - Folders with this name contain CSS files.
+images - Folders with this name contain images.
+scripts - Folders with this name contain JavaScript files.
+
+https://www.youtube.com/watch?v=qm0IfG1GyZU&t=465s
+
+https://codepen.io/BYU-Idaho/pen/abexdNP
+
+--place-items: center---
+-places and keeps item on center of parent element-
+
+variable {
+display: grid;
+place-items: center;
+}
+
+--display: flex;--
+-as you start decreasing the size of the screen, those items will start spanning into the same line and deconstruct as you increase the size of the viewport-
+
+to stay on top of each other
+variable {
+    display: flex;
+    flex: 0 1 <baseWidth>
+}
+
+to have them increase and decrease(stretch)
+flex: 1 1 <baseBasis>
+
+--
