@@ -1,0 +1,23 @@
+Diference between const and let:
+const declares a variable with a constant value.
+ Meaning once you assign a value to a const variable, 
+you cannot reasign it later in your code.
+
+let declares a variable that can be reassigned later in your code.
+
+- A string data type is a collection or sequence of characters treated 
+as a single unit. 
+lLStrings can include letters, numbers, symbols, and even spaces. 
+
+Template literals are string literals that allow for embedded expressions.
+ They are enclosed by the backtick (`) character instead of single or
+  double quotes. Template literals can contain placeholders, which are 
+  indicated by the dollar sign and curly braces (${expression}).
+
+let name = 'Alicia';
+let age = 25;
+let message2 = `My name is ${name} and I am ${age} years old.`;
+
+- index.html it's a common convention in web development to name the main
+ entry point of a website or directory.
+This convention originated from early web servers, which would automatically serve an "index.html" file when a directory was accessed without specifying a file name. 
