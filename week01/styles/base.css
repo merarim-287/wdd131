@@ -7,9 +7,23 @@ header {
     flex-direction: column;
     justify-content: space-between;
     background-color: navy;
-    padding: o;
+    padding: 5em;
 }
 
+nav {
+    background-color: rgb(79, 73, 73);
+    color: white;
+    margin: 0;
+    max-width: 100%;
+}
+
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
 
 
 main {
