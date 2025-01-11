@@ -89,6 +89,25 @@ main {
     border-radius: 10px 10px 0 0;
 }
 
+h1 p {
+   padding: 2em 2em 2em 2em; 
+}
+
+img {
+    float: right;
+    width: 40%;
+    border: 1px solid black;
+}
+
+h2 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 img {
+    float: left;
+}
+
 .right-card {
     display: grid;
     padding-top: 0;
@@ -98,7 +117,7 @@ main {
     border-radius: 10px 10px 0 0;
 } 
 
-.right-card h2 {
+.right-card {
     background: rgb(88, 84, 87);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
