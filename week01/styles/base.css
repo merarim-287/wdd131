@@ -1,4 +1,10 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
     
 }
 
@@ -6,30 +12,63 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: navy;
-    padding: 5em;
+    background-color: rgb(46, 42, 44);
+    padding-bottom: 0;
+    padding-top: 4rem;
+    color: white;
+    font-weight: 2rem;
+    border: 1px solid black;
+}
+
+header h1 {
+    padding-bottom: 2rem; 
+    font-weight: 7px;
+    padding-left: 5rem;
 }
 
 nav {
-    background-color: rgb(79, 73, 73);
+    display: flex;
+    background: linear-gradient(to bottom right, black, rgb(225, 175, 207));
     color: white;
-    margin: 0;
     max-width: 100%;
+    margin: 0;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+nav li {
+    justify-content: space-between;
+    font-weight: 5px;
+    margin-left: 5rem;
+}
 
 nav a {
     display: block;
     color: white;
     text-align: center;
     padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.2rem;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    color:rgb(13, 13, 13);
 }
 
 
 main {
-
+    display: grid;
 }
 
-footer {
+c
+
+.footer {
 
 }
