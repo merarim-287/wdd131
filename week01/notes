@@ -1,3 +1,7 @@
+Java Script
+
+
+
 Diference between const and let:
 const declares a variable with a constant value.
  Meaning once you assign a value to a const variable, 
@@ -21,3 +25,48 @@ let message2 = `My name is ${name} and I am ${age} years old.`;
 - index.html it's a common convention in web development to name the main
  entry point of a website or directory.
 This convention originated from early web servers, which would automatically serve an "index.html" file when a directory was accessed without specifying a file name. 
+
+
+-JavaScript is the "brain" behind the dynamic content on websites, allowing you to create things like skllideshows, forms and games.
+
+-To create a JavaScript file, you semply need to create a text file and save it with a  .js extension. example script.js 
+
+-----Basic Structure of a JavaScript File -----
+
+// This is a comment - it won't be executed
+// comments are for explaining your code
+
+// Define a variable
+let greeting = "Hello, world!;
+
+  
+// Funrion to display a greeting
+function sayHello() {
+  console.log(greeting);
+}
+
+// Call the function
+sayHello();
+
+
+-----How to link JavaScript to an HTML File----
+
+-Use <script> to link JavaScript to file. Place tag inside the <head> or at the end of the <body> section of your HTML file.
+
+example: In this expample the deffer attribute ensures the script runs after the HTML is fully parsed, which helps prevent issues when the script tries to access HTML elements that haven't been loaded yet.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <neta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First JavaScript Project</title>
+  <script src="script.js" defer></script> <!-- Lint to the JavaScript file -->
+</head> 
+<body>
+  <h1>Welcome to my Website</h1>
+</body>
+</html>
+
+To run your JavaScript code open HTML file (index.html) in a web browser. You can use browser developer tools( open F12) to see console output, where the console.log(greeting); statement will print "Hello, world!".
+
