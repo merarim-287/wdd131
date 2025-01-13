@@ -70,3 +70,38 @@ example: In this expample the deffer attribute ensures the script runs after the
 
 To run your JavaScript code open HTML file (index.html) in a web browser. You can use browser developer tools( open F12) to see console output, where the console.log(greeting); statement will print "Hello, world!".
 
+-  Queries are the tools we use to apply different styles to a web page based on specific conditions. 
+
+-  The @media at-rule specifies condition to create a block of CSS rules that are applied if the condition evaluates to true. 
+example:
+      @media not|only mediatype and (expressions) {
+        /* CSS rules go here inside the @media query's opening and closing curly braces {} */
+      }
+
+
+example:
+ 
+@media screen and (min-width: 640pxf) {
+  h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+    color: navy;
+  }
+}
+
+The @media screen and (min-width: 640px) {
+   //*is the signature line of the @media query block of CSS rules to be applied if 
+   // the conditions are met. In this case the conditions are if the media type is a 
+   // screen and the viewport minimum width is at least 640 pixels wide.
+
+-The heading h1 { <h1> element sekectir which starts the defined css rule.
+- The @font-size: 2.5rem; margin: 1rem; color: navy; are declarations to be
+ applied to any <h1> elements if the @media query conditions are met.
+- The first } closes the css rule for <h1> code elements.
+- The last } closes the media query.
+
+Curly brackets {} are used to contain a specific media query and 
+are also used to define css rules. A commmon mistake is to close 
+the @media query too soon or not at all. Using the automatic 
+indentation feature of VS Code document formatting features will 
+help you recognize issues with your CSS syntax.
