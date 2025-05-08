@@ -31,3 +31,39 @@ nav a {
     white-space: nowrap;
     margin-left: 2rem;
 }
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.left-block {
+    grid-column: 1;
+    color: black;
+    background-color: gray;
+    padding: 1rem 3rem 12rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.right-block {
+    grid-column: 2;
+    color: black;
+    background-color: white;
+    padding: 1rem 3rem 12rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer {
+    color: white;
+    background-color: rgb(62, 61, 61);
+    width: auto;
+    margin: 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 5rem;
+}
