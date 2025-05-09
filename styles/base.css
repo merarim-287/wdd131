@@ -4,10 +4,17 @@
     --accent1-color: #3E5C76;
     --accent2-color: #748CAB;
     --accent3-color: #F0EBD8;
-    --font1-family: ;
-    --font2-family: ;
+    --font1-family: italic;
 }
 
 body {
+    display: grid;
+}
 
+header nav {
+    display: flex;
+    color: gray;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    width: auto
 }
