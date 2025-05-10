@@ -12,32 +12,47 @@ body {
 }
 
 header {
-    color: white;
-    background-color: var(--secondary-color);
+    color: rgb(176, 160, 160);
+    background-color: var(--primary-color);
+    padding-top: 1.5rem;
+    text-align: center;
 }
 
 header h1 {
     font-size: 15px;
     margin-left: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     font-weight: 100;
 }
 
-nav {
+header nav {
     display: flex;
-    background-color: var(--accent3-color);
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
 }
 
-nav a {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    width: auto;
-    color: black;
-    font-size: 15px;
+header nav a {
+    font-size: 2rem;
+    font-family: var(--font1-family);
+    font-weight: 500; 
+    color: white;
     text-decoration: none;
     white-space: nowrap;
-    margin-left: 2rem;
+    margin: 0 1rem;
+    background: linear-gradient(45def, blue, purple);
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease-in-out;
 }
 
+header nav a:hover {
+    transform: rotateX(360deg)rotateY(360deg);
+    color: black;
+}
+
+
+
+  
