@@ -53,6 +53,20 @@ header nav a:hover {
     color: black;
 }
 
+.main-container {
+    display: grid;
+    position: relative;
+    background-color: gray;
+    margin-top: 1.5rem;
+}
+
+.article img {
+    max-width: 200px;
+    height: auto;
+}
+
+
+
 
 
   
