@@ -74,8 +74,11 @@ header nav a:hover {
 .left-card, .right-card {
     border: 2px solid black;
     background-color: white;
-    height: 800px;
+    height: 750px;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 .left-card {
@@ -93,6 +96,7 @@ header nav a:hover {
     color: white;
     background-color: var(--secondary-color);
     margin-top: 0;
+    border-radius: auto;
 }
 
 .left-card article {
@@ -108,7 +112,7 @@ header nav a:hover {
     font-size: 15px;
     font-family: var(--font1-family);
     font-weight: 400;
-    margin-right: 35px;
+    margin: 30px;
 }
 
 .left-card article img {
@@ -135,36 +139,45 @@ header nav a:hover {
 .bottom-article h2 {
     position: absolute;
     left: 280px;
-    bottom: 400px;
+    bottom: 320px;
     font-size: 30px;
     margin-top: 70px;
 }
 
+.bottom-article h3 {
+    position: absolute;
+    left: 100px;
+    bottom: 300px;
+    color: black;
+    margin-top: 10px;
+}
+
 .bottom-article article img {
     flex-shrink: 0;
-    width: 100%;
+    width: 400%;
     height: auto;
     order: 1;
-    margin: 10px;
+    margin: 0;
 }
 
 .bottom-article figcaption {
     caption-side: bottom;
-    padding: 10px;
+    padding: 6px;
     font-weight: bold;
     font-size: 20px;
+    margin-left: 35px;
 }
 
 .bottom-article  p {
     flex-grow: 1;
     order: 2;
-    width: 90%;
-    font-size: 20px;
+    font-size: 15px;
     font-family: var(--font1-family);
     font-weight: 400;
-    padding: 10px;
+    padding-right: 70px;
     margin-top: 50px;
-    margin: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
 }
 
 .right-card {
