@@ -9,6 +9,10 @@
 
 body {
     display: grid;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    flex-direction: column;
 }
 
 header {
@@ -57,12 +61,14 @@ header nav a:hover {
 }
 
 .main-container {
+    flex-grow: 1;
     position: absolute;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     margin-top: 1.5rem;
     width: 100%;
+    min-height: 100vh;
 }
 
 .left-card, .right-card {
@@ -96,10 +102,10 @@ header nav a:hover {
 .left-card article p {
     flex-grow: 1;
     width: 100%;
-    font-size: 25px;
+    font-size: 15px;
     font-family: var(--font1-family);
     font-weight: 400;
-    padding: 15px;
+    margin-right: 35px;
 }
 
 .left-card article img {
@@ -116,28 +122,67 @@ header nav a:hover {
 
 .bottom-article {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: row;
+    width: auto;
+    padding: 5rem;
+    margin-top: 1rem;
+    margin-right: 20px;
+}
+
+.bottom-article h2 {
+    position: absolute;
+    left: 280px;
+    bottom: 400px;
+    font-size: 30px;
+    margin-top: 70px;
 }
 
 .bottom-article article img {
     flex-shrink: 0;
-    max-width: 200px;
+    width: 100%;
     height: auto;
     order: 1;
-    margin-right: 20px;
+    margin: 10px;
+}
+
+.bottom-article figcaption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .bottom-article  p {
     flex-grow: 1;
     order: 2;
-    width: 100%;
-    font-size: 25px;
+    width: 90%;
+    font-size: 20px;
     font-family: var(--font1-family);
     font-weight: 400;
-    padding: 15px;
+    padding: 10px;
+    margin-top: 50px;
+    margin: 10px;
 }
+
+footer {
+    display: flex;
+    position: relative;
+    bottom: o;
+    top: 850px;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 0;
+}
+    
+footer p {
+    color: rgb(190, 189, 207);
+    text-align: center;
+    font-size: 15px;
+    font-family: var(--font1-family);
+    font-weight: 400;
+}
+
 
 
 
