@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #0D1321;
-    --secondary-color: #1D2D44;
-    --accent1-color: #3E5C76;
-    --accent2-color: #748CAB;
-    --accent3-color: #F0EBD8;
+    --primary-color: #0F110C;
+    --secondary-color: #612940;
+    --accent1-color: #FDECEF;
+    --accent2-color: #9D6381;
+    --accent3-color: #CECCCC;
     --font1-family: italic;
 }
 
@@ -12,24 +12,26 @@ body {
 }
 
 header {
-    color: rgb(176, 160, 160);
-    background-color: var(--primary-color);
+    background: radial-gradient(circle,pink,black);
+    color: white; 
     padding-top: 1.5rem;
     text-align: center;
 }
 
 header h1 {
-    font-size: 15px;
+    font-size: 40px;
     margin-left: 1rem;
     padding-bottom: 1rem;
-    font-weight: 100;
+    font-weight: 500;
+    text-shadow: .5px .5px 2px black;
 }
 
 header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--accent2-color);
+    gap: 170px;
+    background-color: var(--primary-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
     width: 100%;
@@ -50,20 +52,67 @@ header nav a {
 
 header nav a:hover {
     transform: rotateX(360deg)rotateY(360deg);
-    color: black;
+    color: var(--accent2-color);
+    text-shadow: .5px .5px 1px rgb(206, 206, 206);
 }
 
 .main-container {
+    position: absolute;
     display: grid;
-    position: relative;
-    background-color: gray;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
     margin-top: 1.5rem;
+    width: 100%;
 }
 
-.article img {
+.left-card, .right-card {
+    border: 2px solid black;
+    background-color: white;
+    height: 800px;
+}
+
+.left-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-card h1, .right-card h1 {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    background-color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.left-card article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-card article p {
+    flex-grow: 1;
+    width: 100%;
+    font-size: 25px;
+    font-family: var(--font1-family);
+    font-weight: 400;
+    padding: 15px;
+}
+
+.left-card article img {
+    margin-left: 30px;;
     max-width: 200px;
     height: auto;
-}
+    flex-shrink: 0;
+    order: 2;
+    margin: 15px;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 1px 1px 4px gray;
+};
 
 
 
