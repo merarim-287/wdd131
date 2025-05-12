@@ -112,8 +112,32 @@ header nav a:hover {
     padding: 0;
     border: 1px solid black;
     box-shadow: 1px 1px 4px gray;
-};
+}
 
+.bottom-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bottom-article article img {
+    flex-shrink: 0;
+    max-width: 200px;
+    height: auto;
+    order: 1;
+    margin-right: 20px;
+}
+
+.bottom-article  p {
+    flex-grow: 1;
+    order: 2;
+    width: 100%;
+    font-size: 25px;
+    font-family: var(--font1-family);
+    font-weight: 400;
+    padding: 15px;
+}
 
 
 
