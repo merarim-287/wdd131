@@ -1,37 +1,28 @@
 :root {
-    --font-family: roboto; 
+    --font-family: 'Roboto'; 
 }
 
 body {
     font-family: var(--font-family);
 }
 
-header, main {
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: white;
-}
-
 header, main, footer {
     max-width: 640px;
-}
-
-header {
-    background-color: rgb(120, 120, 168);
-    padding:  15px;
-    border: 1px solid #bbbdd8;
+    margin: 1rem auto;
+    border: 1px solid #bbb;
+    padding: 1rem;
+    background-color: white;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-gap: 1rem;
 }
 
 section {
-    margin-top: 20px;
     border: 5px solid#bbbdd8;
-    padding: 10px;
+    padding: 1rem;
 }
 
 footer {
