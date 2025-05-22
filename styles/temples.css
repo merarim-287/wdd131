@@ -1,0 +1,67 @@
+:root {
+    --primary-color: #0F110C;
+    --secondary-color: #612940;
+    --accent1-color: #FDECEF;
+    --accent2-color: #9D6381;
+    --accent3-color: #CECCCC;
+    --font1-family: italic;
+}
+
+body {
+    display: grid;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: blue;
+}
+
+header h1 {
+    color: white;
+    font-size: 2rem;
+    
+    text-decoration: none;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: o;
+    top: 850px;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+    
+footer p {
+    color: rgb(190, 189, 207);
+    font-size: 15px;
+    font-family: var(--font1-family);
+    font-weight: 400;
+}
+
+footer #lastModified {
+    font-size: 12px;
+    color:rgb(210, 195, 195);
+}
