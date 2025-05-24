@@ -22,7 +22,6 @@ header {
 header h1 {
     color: white;
     font-size: 2rem;
-    
     text-decoration: none;
 }
 
@@ -33,13 +32,36 @@ header nav {
     justify-content: space-between;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
-    font-size: 1.5rem;
     color: white;
-    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    transition: letter-spacing 0.3s ease-in-out;
 }
 
+header nav a:hover {
+    letter-spacing: 5px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 25px;
+    place-items: center;
+    max-width: 100%;
+}
+
+.grid-container > div {
+    width: 100%;
+    max-width: 350px;
+    border: 1px solild blue;
+}
 
 footer {
     display: flex;
