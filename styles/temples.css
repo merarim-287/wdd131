@@ -45,7 +45,7 @@ header nav a:hover {
 }
 
 main {
-    max-width: 800px;
+    max-width: unset;
     margin: 0 auto;
 }
 
@@ -54,14 +54,30 @@ main {
     grid-template-columns: repeat(2, 1fr); 
     grid-gap: 25px;
     place-items: center;
-    max-width: 100%;
+    width: 100%;
+    margin-top: 3rem;
 }
 
-.grid-container > div {
+div .grid-container {
     width: 100%;
     max-width: 350px;
-    border: 1px solild blue;
+    border: 2px solid blue;
 }
+
+figure {
+    place-items: center;
+    font-size: 20px;
+    font-weight: 400px;
+    font-family: var(--font1-family);
+}
+
+figure img {
+    max-width: 400px;
+    height: auto;
+    border: 1px solid black;
+}
+
+
 
 footer {
     display: flex;
