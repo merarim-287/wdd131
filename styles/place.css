@@ -32,22 +32,23 @@ header h2 {
     background-color:black;
 }
 
-section {
-    display: grid;
-}
-
 h2, ul {
     text-align: center;
     list-style: none;
 }
 
-#WeatherIcon > img {
-    max-width: 30px;
-    height: auto;
-}
-
-#WweatherIcon {
+img #WweatherIcon {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 10px;
+    height: auto;
+}
+
+footer  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: rgb(161, 86, 86);
 }
