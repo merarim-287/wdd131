@@ -3,7 +3,7 @@ body {
 }
 
 body {
-    padding: 0 15rem;
+    padding: 0;
 }
 
 header {
@@ -12,7 +12,6 @@ header {
     text-align: center;
     font-size: 2rem;
     font-weight: 300;
-    padding: 0 15rem;
 }
 
 header h2 {
@@ -31,4 +30,24 @@ header h2 {
     margin: 0;
     padding-top: 2rem;
     background-color:black;
+}
+
+section {
+    display: grid;
+}
+
+h2, ul {
+    text-align: center;
+    list-style: none;
+}
+
+#WeatherIcon > img {
+    max-width: 30px;
+    height: auto;
+}
+
+#WweatherIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
