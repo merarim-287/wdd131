@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    display: block;
+    animation: fading 2s ease-in;
+    opacity: 0 to 1;y
+}
