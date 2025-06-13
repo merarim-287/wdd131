@@ -122,3 +122,8 @@ function displayTemples(temples) {
 
 document.addEventListener("DOMContentLoaded", () => displayTemples(temples));
 
+const yearsSpan = document.getElementById("currentyear");
+yearsSpan.textContent = new Date().getFullYear();
+
+const lastModifiedSpan = document.getElementById("lastModified");
+lastModifiedSpan.textContent = document.lastModified;
