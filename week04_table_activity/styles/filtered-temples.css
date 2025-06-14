@@ -79,8 +79,16 @@ main {
 div .grid-container {
     width: 100%;
     max-width: 350px;
-    border: 2px solid blue;
+    border: 2px solid blue; 
 }
+
+#temple-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
 
 footer {
     display: flex;
