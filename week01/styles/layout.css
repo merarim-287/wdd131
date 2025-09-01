@@ -15,7 +15,7 @@ h1 {
 
 nav {
     display: flex; 
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 2rem;
     background-color: black;
     flex-wrap: nowrap;
@@ -28,4 +28,42 @@ nav a {
     white-space: nowrap;
     font-size: 20px;
     font-weight: 300;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-bottom: 0;
+}
+
+.one h2, h3 {
+    color: black;
+    margin-top:  0;
+    padding-top: .5rem;
+    padding-bottom: 10rem;
+    padding-left: .5rem;
+    font-size: 17px;
+    font-weight: 350;
+    margin-bottom: 0;
+}
+
+.one h2 { 
+    background-color: rgb(204, 203, 203);
+}
+
+.two h3 {
+    background-color: white;
+}
+
+footer {
+    background-color: rgb(75, 74, 74);
+    color: white;
+    font-size: 15px;
+    font-weight: 350;
+    place-items: center;
+    margin-top: 0;
+}
+footer p {
+    padding-top: .2rem;
+    padding-bottom: 3rem;
 }
