@@ -39,8 +39,12 @@ a {
     font-weight: 450;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+.name {
+    position: absolute;
+    left: 50rem;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
