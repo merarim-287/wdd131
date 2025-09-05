@@ -1,0 +1,32 @@
+
+span, header {
+    display: block;
+}
+
+span {
+    background-color: rgb(47, 47, 131);
+}
+
+#course-title {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 25px;
+    font-weight: 450;
+}
