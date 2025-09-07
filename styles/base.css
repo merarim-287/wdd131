@@ -10,6 +10,12 @@ span, header {
     display: block;
 }
 
+header {
+    position: relative; 
+    text-align: center;
+    padding: 1rem;
+}
+
 span {
     background-color: var(--contrast-3);
 }
@@ -27,6 +33,15 @@ span {
     padding-left: 15rem;
 }
 
+.name {
+    position: absolute;
+    top: -10rem;
+    right: .5rem;
+    font-size: 2rem;
+    color: black;
+    white-space: nowrap;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -42,12 +57,10 @@ a {
     font-weight: 450;
 }
 
-.name {
-    position: absolute;
-    left: 50rem;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+main {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 3rem;
 }
 
