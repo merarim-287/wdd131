@@ -73,6 +73,7 @@ main {
     padding-bottom: 10rem;
     padding-left: 1rem;
     border: 1px solid black;
+    box-shadow: 4px 4px 7px gray;
 }
 
 .card-two {
@@ -89,7 +90,7 @@ main {
     text-align: center;
     margin: 0;
     margin-left: -1rem;
-    padding: .5rem;
+    padding: 1rem;
     border: 1px solid black;
 }
 
@@ -97,20 +98,71 @@ main {
     font-size: 1.5rem;
 }
 
-.card-one img {
-    width: 100px;
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.top-section img {
+    order: 2;
+    width: 200px;
     height: auto;
-    float: right;
-    margin: 1.5rem; 
+    margin: 1.5rem;
     border: 1.5px solid black;
     box-shadow: 2px 2px 5px gray;
 }
 
-.card-one .bottom-section img {
-    float: left;
-    width: 120px;
-    height: auto;
-    margin: 1rem;
+.bottom-section {
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    overflow: hidden;
 }
+
+.bottom-section h4 {
+    margin: 0;
+    padding: 0 .5rem 0;
+    font-size: 2rem;
+    font-weight: 400px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.bottom-section img {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 1.5rem;
+    border: 1.5px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.top-section p {
+    flex: 1;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+}
+
+.bottom-section p {
+    margin: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: .5rem 0;
+    text-align: justify;
+}
+
+.card-two a {
+    font-size: 2rem;
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+
+
 
 
