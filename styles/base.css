@@ -156,10 +156,10 @@ main {
     text-align: justify;
 }
 
-.card-two a {
+.card-two li a {
     font-size: 2rem;
     background-color: white;
-    color: var(--secondary-color);
+    color: black;
 }
 
 
