@@ -35,8 +35,8 @@ span {
 
 .name {
     position: absolute;
-    top: -10rem;
-    right: .5rem;
+    top: -9rem;
+    left: 49rem;
     font-size: 2rem;
     color: black;
     white-space: nowrap;
@@ -46,6 +46,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: var(--secondary-color);
+    margin-bottom: -1rem;
 }
 
 a {
@@ -59,8 +60,57 @@ a {
 
 main {
     position: relative;
-    max-width: 800px;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 3rem;
+    padding: 3rem 15rem 0 .5rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
 }
+
+.card-one, .card-two {
+    background-color: white;
+    padding-bottom: 10rem;
+    padding-left: 1rem;
+    border: 1px solid black;
+}
+
+.card-two {
+    margin-right: 1rem;
+}
+
+.card-one {
+    margin-left: 1rem;
+}
+
+.card-one h2, .card-two h3 {
+    background-color: var(--contrast-2);
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-left: -1rem;
+    padding: .5rem;
+    border: 1px solid black;
+}
+
+.card-two h3 {
+    font-size: 1.5rem;
+}
+
+.card-one img {
+    width: 100px;
+    height: auto;
+    float: right;
+    margin: 1.5rem; 
+    border: 1.5px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.card-one .bottom-section img {
+    float: left;
+    width: 120px;
+    height: auto;
+    margin: 1rem;
+}
+
 
