@@ -13,11 +13,9 @@ span, header {
 header {
     position: relative; 
     text-align: center;
-    padding: 1rem;
-}
-
-span {
-    background-color: var(--contrast-3);
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid gray;
 }
 
 #course-title {
@@ -35,7 +33,7 @@ span {
 
 .name {
     position: absolute;
-    top: -9rem;
+    top: -8rem;
     left: 49rem;
     font-size: 2rem;
     color: black;
@@ -56,6 +54,10 @@ a {
     padding-bottom: 1rem;
     font-size: 25px;
     font-weight: 450;
+}
+
+span {
+    background-color: var(--contrast-3)
 }
 
 main {
@@ -111,7 +113,7 @@ main {
     width: 200px;
     height: auto;
     margin: 2rem;
-    border: 1.5px solid black;
+    border: 2px solid black;
     box-shadow: 2px 2px 5px gray;
 }
 
@@ -137,7 +139,7 @@ main {
     width: 200px;
     height: auto;
     margin: 1.5rem;
-    border: 1.5px solid black;
+    border: 2px solid black;
     box-shadow: 2px 2px 5px gray;
 }
 
@@ -169,6 +171,25 @@ main {
     margin-top: 5rem;
 }
 
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: .5rem;
+    margin-top: 1rem;
+    border: 2px solid black;
+}
 
+footer p {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+}
 
+footer span{
+    background-color: var(--secondary-color);
+    color: white;
+}
 
