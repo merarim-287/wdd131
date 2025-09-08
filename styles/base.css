@@ -190,6 +190,6 @@ footer p {
 
 footer span{
     background-color: var(--secondary-color);
-    color: white;
+    color: var(--contrast-1);
 }
 
