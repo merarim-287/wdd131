@@ -110,7 +110,7 @@ main {
     order: 2;
     width: 200px;
     height: auto;
-    margin: 1.5rem;
+    margin: 2rem;
     border: 1.5px solid black;
     box-shadow: 2px 2px 5px gray;
 }
@@ -158,10 +158,16 @@ main {
 
 .card-two li a {
     font-size: 2rem;
-    background-color: white;
     color: black;
 }
 
+.card-two ul li {
+    margin-bottom: 5rem;
+}
+
+.card-two ul {
+    margin-top: 5rem;
+}
 
 
 
