@@ -7,3 +7,4 @@ li.textContent = input.ariaValueMax;
 
 deleteButton.textContent = '❌';
 li.append(deleteButton);
+list.append(li);
