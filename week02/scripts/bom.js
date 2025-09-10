@@ -2,11 +2,24 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
-const li = document.createElement('li');
-const deleteButton = document.createElement('button');
+button.addEventListener('click', () => {
+    const chapter = input.ariaValueMax.trim();
+ 
 
+    if (chapter !== '') {
+        const li = documentElement('li');
+        li.textContent = chapter;
 
-li.textContent = input.ariaValueMax;
-deleteButton.textContent = '❌';
-li.append(deleteButton);
-list.append(li);
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = '❌';
+        deleteButton.addEventListener('click', () => {
+            list.removeChild(li);
+        });
+
+        li.appendChild(deleteButton);
+        list.appendChild(li);
+
+        input.value = '';
+        input.focus();
+    }
+});
