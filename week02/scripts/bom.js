@@ -5,7 +5,7 @@ const list = document.querySelector('ul');
 button.addEventListener('click', () => {
     const chapter = input.ariaValueMax.trim();
  
-
+    const li = document.createElement('li');
     if (chapter !== '') {
         const li = documentElement('li');
         li.textContent = chapter;
