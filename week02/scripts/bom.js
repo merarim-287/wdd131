@@ -2,7 +2,7 @@ const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
-button.addEventListener('click', () => {
+button.addEventListener('click', () {
     const chapter = input.ariaValueMax.trim();
  
     const li = document.createElement('li');
