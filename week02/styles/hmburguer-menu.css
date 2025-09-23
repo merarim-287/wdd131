@@ -50,10 +50,9 @@ nav {
 
 .navigation li {
     display: none;
-   
 }
 
-.nav a {
+.navigation a {
     display: block;
     padding: 0.75rem;
     text-align: left;
