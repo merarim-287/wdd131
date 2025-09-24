@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: .5rem;
+    margin-top: 1rem;
+    border: 2px solid black;
+}
+
+footer p {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+footer span {
+    background-color: var(--secondary-color);
+    color: var(--contrast-1);
+}
