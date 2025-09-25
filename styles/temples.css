@@ -71,6 +71,32 @@ main figcaption {
     font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        color: white;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+    }
+
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main img {
+        width: 250px;
+        height: 150px;
+    }
+}
+
 footer {
     background-color: var(--secondary-color);
     color: white;
