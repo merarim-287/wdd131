@@ -21,12 +21,13 @@ header h1 {
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    margin: 1rem;
+    margin: 2rem;
+    padding-top: 2rem;
 }
 
 #course-title {
     display: block;
-    margin-right: 1rem;
+    margin-right: .1rem;
     color: white;
 }
 
@@ -37,10 +38,11 @@ header h1 {
 nav {
     display: flex;
     justify-content: center; 
-    align-items: center;
-    gap: 2rem;
+    align-items: space-around;
+    gap: 10rem;
     background-color: var(--accent1-color);
     padding: .1rem;
+    border: 1px solid black;
 }
 
 nav a {
@@ -93,9 +95,18 @@ main {
 }
 
 .card img {
-    float: right;
+    margin-left: 400px;
     max-width: 200px;
     height: auto;
     border: 1px solid black;
     box-shadow: 2px 2px 5px gray;
+}
+
+.card p {
+    float: left;
+}
+
+footer {
+    background-color: black;
+    color: white;
 }
