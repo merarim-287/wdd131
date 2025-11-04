@@ -94,16 +94,39 @@ main {
     font-size: 2rem;
 }
 
-.card img {
-    margin-left: 400px;
-    max-width: 200px;
+.profile {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 1rem;
+    align-items: start;
+    margin-bottom: 2rem;
+}
+
+.profile img {
+    width: 200px;
     height: auto;
     border: 1px solid black;
     box-shadow: 2px 2px 5px gray;
 }
 
-.card p {
-    float: left;
+.profile p {
+    margin: 1rem;
+}
+
+
+
+.card ul {
+    padding: 1.5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 2rem;
+    
 }
 
 footer {
