@@ -1,9 +1,9 @@
 :root {
-    --primary-color:#003f5c;
-    --secondary-color:#58508d;
-    --accent1-color:#bc5090;
-    --accent2-color:#ff6361;
-    --accent3-color:#ffa600;
+    --primary-color: #003f5c;
+    --secondary-color: #58508d;
+    --accent1-color: #bc5090;
+    --accent2-color: #ff6361;
+    --accent3-color: #ffa600;
 }
 
 .momo-trust-display-regular {
@@ -21,115 +21,144 @@ header h1 {
     justify-content: center;
     align-items: center;
     gap: .5rem;
-    margin: 2rem;
-    padding-top: 2rem;
+    margin: 0;
+    padding: 1rem;
 }
 
 #course-title {
     display: block;
-    margin-right: .1rem;
+    margin-right: 1rem;
     color: white;
 }
 
 #my-name {
-    color: var(--accent3-color);
+    color: var(--accent1-color);
+    text-shadow: 1px 1px 3px gray;
 }
 
 nav {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     align-items: space-around;
     gap: 10rem;
-    background-color: var(--accent1-color);
-    padding: .1rem;
+    background-color: var(--accent3-color);
+    padding: .2rem;
     border: 1px solid black;
 }
 
 nav a {
-    color: black;
-    text-shadow: 1px 1px 3px gray;
+    color: var(--accent3-color);
+    text-shadow: 2px 2px 5px black;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.6rem;
     font-weight: 800;
     transition: transform 0.3s ease;
-
+    padding: .5rem;
 }
 
 nav a:hover {
-    color: var(--accent2-color);
-    text-shadow: 3px 3px 7px black;
+    color: black;
+    text-shadow: 2px 2px 5px rgb(135, 133, 133);
     transform: tranlateY(-5px);
-    animation: jump 0.4s ease;
+    animation: jump 0.16s ease;
 }
 
 @keyframes jump {
-    0% {transform: translateY(0); }
-    50% {transform: translateY(-10px);}
-    100% {transform: translateY(0);}
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     gap: 2rem;
     padding: 1rem;
-    background-color: lightgray;
+    margin: 0 auto;
+    background-color: rgb(230, 221, 221);
 }
 
 .card {
-    display: grid; 
+    display: grid;
     grid-template-rows: auto auto 1fr;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 2rem;
     background-color: white;
     border: 1px solid black;
+    border-radius: 10px;
 }
 
 .card h2 {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--accent1-color);
     text-align: center;
-    margin: 0;
-    padding: 1rem;
+    margin-top: 0;
     font-size: 2rem;
-}
-
-.profile {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 1rem;
-    align-items: start;
-    margin-bottom: 2rem;
+    color: black;
+    text-shadow: 1px 1px 2px rgb(112, 111, 111);
+    padding: 1rem;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    border-radius: 9px;
 }
 
 .profile img {
-    width: 200px;
+    float: right;
+    max-width: 200px;
     height: auto;
-    border: 1px solid black;
+    border: 2px solid black;
     box-shadow: 2px 2px 5px gray;
+    margin: 1rem;
 }
 
 .profile p {
-    margin: 1rem;
+    margin: 2rem;
+    font-size: 1.2rem;
 }
 
+.flag {
+    margin: 2rem;
+}
 
+.flag h3, h4 {
+    text-align: center;
+}
 
-.card ul {
-    padding: 1.5rem;
+.flag h4 {
+    font-weight: bold;
+}
+
+.flag img {
+    float: left;
+    max-width: 250px;
+    height: auto;
+    margin: 2rem;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.flag p {
     margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    padding: 2rem;
+    font-size: 1.2rem;
 }
 
 .card a {
     text-decoration: none;
     font-size: 2rem;
-    
+    line-height: 3;
 }
 
 footer {
     background-color: black;
     color: white;
+    text-align: center;
 }
