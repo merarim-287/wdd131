@@ -45,15 +45,25 @@ nav {
 
 nav a {
     color: black;
+    text-shadow: 1px 1px 3px gray;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 800;
+    transition: transform 0.3s ease;
 
 }
 
-a:hover {
-    color: maroon;
-    background-color: #ffd9d9;
+nav a:hover {
+    color: var(--accent2-color);
+    text-shadow: 3px 3px 7px black;
+    transform: tranlateY(-5px);
+    animation: jump 0.4s ease;
+}
+
+@keyframes jump {
+    0% {transform: translateY(0); }
+    50% {transform: translateY(-10px);}
+    100% {transform: translateY(0);}
 }
 
 main {
@@ -61,13 +71,31 @@ main {
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
     padding: 1rem;
+    background-color: lightgray;
 }
 
 .card {
-    display: grid;
+    display: grid; 
     grid-template-rows: auto auto 1fr;
     gap: 1rem;
     padding: 1rem;
     background-color: white;
     border: 1px solid black;
+}
+
+.card h2 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.card img {
+    float: right;
+    max-width: 200px;
+    height: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px gray;
 }
