@@ -116,12 +116,13 @@ main {
     height: auto;
     border: 2px solid black;
     box-shadow: 2px 2px 5px gray;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .profile p {
-    margin: 2rem;
+    margin: 3rem;
     font-size: 1.2rem;
+    padding: 1rem;
 }
 
 .flag {
@@ -138,7 +139,7 @@ main {
 
 .flag img {
     float: left;
-    max-width: 250px;
+    max-width: 240px;
     height: auto;
     margin: 2rem;
     border: 2px solid black;
@@ -161,4 +162,5 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    padding: 1rem;
 }
