@@ -6,9 +6,10 @@
     --accent3-color: #ffa600;
 }
 
-.momo-trust-display-regular {
-    font-family: "Momo Trust Display", sans-serif;
-    font-weight: 400;
+body {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
     font-style: normal;
 }
 
