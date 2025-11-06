@@ -125,15 +125,18 @@ main {
 }
 
 .flag {
-    margin: 2rem;
+    margin: 1rem;
 }
 
-.flag h3, h4 {
+.flag h3, hr {
     text-align: center;
 }
 
-.flag h4 {
+.flag hr {
     font-weight: bold;
+    border: none;
+    border-top: 1px solid black;
+    margin: 1rem 0;
 }
 
 .flag img {
@@ -148,7 +151,7 @@ main {
 .flag p {
     margin: 1rem;
     padding: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .card a {
