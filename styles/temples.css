@@ -75,15 +75,20 @@ figure {
 figure img {
     max-width: 400px;
     height: 400px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px gray;
 }
 
 figcaption {
     background-color: white;
     color: black;
-    font-size: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
 }
 
 footer {
+    width: inherit;
     background-color: rgb(102, 82, 159);
     color: white;
     text-align: center;
