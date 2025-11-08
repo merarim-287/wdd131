@@ -20,7 +20,7 @@ header {
     text-align: center;
 }
 
-@media screen (max-width: 640px) {
+@media screen and (max-width: 640px) {
     nav {
         float: right;
     }
