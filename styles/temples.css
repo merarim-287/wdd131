@@ -20,10 +20,13 @@ header {
     text-align: center;
 }
 
-nav a { 
+@media screen (max-width: 640px) {
+    nav a {
+    display: '≡';
     text-decoration: none;
     color: white;
     text-align: center;
+    }
 }
 
 main {
@@ -35,4 +38,16 @@ main {
 figure {
     padding: 1rem;
     background-color: white;
+}
+
+figure img {
+    max-width: 400px;
+    height: 400px;
+}
+
+footer {
+    background-color: rgb(102, 82, 159);
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
