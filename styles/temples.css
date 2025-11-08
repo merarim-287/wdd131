@@ -21,12 +21,19 @@ header {
 }
 
 @media screen (max-width: 640px) {
+    nav {
+        float: right;
+    }
+
     nav a {
-    display: '≡';
     text-decoration: none;
     color: white;
     text-align: center;
     }
+}
+
+#menu {
+    content: "≡";
 }
 
 main {
