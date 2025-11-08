@@ -18,6 +18,13 @@ header {
     background-color: rgb(102, 82, 159);
     color: white;
     text-align: center;
+    margin-top: 0;
+    padding: 1.5rem;
+}
+
+header h1 {
+    color: white;
+    text-align: left;
 }
 
 @media screen and (max-width: 640px) {
@@ -40,12 +47,13 @@ header {
     }
 
     #menu {
-        font-size: 1rem;
+        font-size: 3rem;
         border: none;
         background: none;
+        color: white;
         position: absolute;
-        top: 1rem;
-        right: 1rem;
+        top: 2.5rem;
+        right: 2rem;
     }
 
     #menu::before {
