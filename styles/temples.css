@@ -42,7 +42,11 @@ header h1 {
         text-align: center;
     }
 
-    open a {
+    .navigation a {
+        display: none;
+    }
+
+    .open a {
         display: block;
     }
 
