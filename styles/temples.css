@@ -62,6 +62,14 @@ header h1 {
     #menu::before {
         content: "≡";
     }
+
+    #menu.open::before {
+        content: "❌";
+    }
+}
+
+.navigation a {
+    display: none;
 }
 
 main {
