@@ -9,13 +9,15 @@
         justify-content: center;
         gap: 2rem;
         background-color: rgb(102, 82, 159);
+
     }
 
     .navigation a {
         display: inline-block;
         color: white;
         text-decoration: none;
-        padding: 1rem;
+        padding: .8rem;
+     
     }
 
     main {

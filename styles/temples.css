@@ -15,35 +15,46 @@ body {
 }
 
 header {
-    background-color: rgb(102, 82, 159);
     color: white;
     text-align: center;
     margin-top: 0;
     padding: 1.5rem;
     position: relative;
+    background-color: rgb(102, 82, 159);
+    border: 1px solid black;
 }
 
 header h1 {
     color: white;
     text-align: left;
     font-size: 1.5rem;
+    background-color: rgb(102, 82, 159);
 }
 
+.navigation a {
+    font-size: 1.5rem;
+}
 
 @media screen and (max-width: 640px) {
     .navigation {
         display: flex;
         flex-direction: column;
-        background-color: rgb(102, 82, 159);
+        margin: 0;
     }
 
     .navigation a {
         display: none;
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+    
         text-align: center;
         text-decoration: none;
         color: white;
-        background-color: rgb(102, 82, 159);
+    
+        border-bottom: 1px solid black;
+        max-width: 100%;
     }
 
     .navigation.open a {
