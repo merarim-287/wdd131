@@ -4,7 +4,10 @@
     box-sizing: border-box;
 }
 
-header, main, footer, figure {
+header,
+main,
+footer,
+figure {
     max-width: 640px;
     margin: 1rem auto;
 }
@@ -38,15 +41,11 @@ header h1 {
         text-align: center;
         text-decoration: none;
         color: white;
-        background-color: rgb(102, 82,159);
+        background-color: rgb(102, 82, 159);
         text-align: center;
     }
 
-    .navigation a {
-        display: none;
-    }
-
-    .open a {
+    open a {
         display: block;
     }
 
@@ -61,7 +60,7 @@ header h1 {
     }
 
     #menu::before {
-    content: "≡";
+        content: "≡";
     }
 }
 
@@ -86,6 +85,7 @@ figure img {
 figcaption {
     background-color: white;
     color: black;
+    font-size: 15px;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
