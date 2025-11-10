@@ -4,10 +4,7 @@
     box-sizing: border-box;
 }
 
-header,
-main,
-footer,
-figure {
+header, main, footer, figure {
     max-width: 640px;
     margin: 1rem auto;
 }
@@ -23,53 +20,49 @@ header {
     text-align: center;
     margin-top: 0;
     padding: 1.5rem;
+    position: relative;
 }
 
 header h1 {
     color: white;
     text-align: left;
+    font-size: 1.5rem;
 }
 
+
 @media screen and (max-width: 640px) {
-    nav {
-        float: right;
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(102, 82, 159);
     }
 
-    nav a {
+    .navigation a {
         display: none;
         padding: 1rem;
         text-align: center;
         text-decoration: none;
         color: white;
         background-color: rgb(102, 82, 159);
-        text-align: center;
     }
 
-    .open a {
+    .navigation.open a {
         display: block;
     }
 
     #menu {
-        font-size: 3rem;
+        font-size: 2rem;
         border: none;
         background: none;
         color: white;
         position: absolute;
-        top: 2.5rem;
-        right: 2rem;
+        top: 1rem;
+        right: 1rem;
     }
 
     #menu::before {
         content: "≡";
     }
-
-    #menu.open::before {
-        content: "❌";
-    }
-}
-
-.navigation a {
-    display: none;
 }
 
 main {
@@ -84,8 +77,8 @@ figure {
 }
 
 figure img {
-    max-width: 400px;
-    height: 400px;
+    max-width: 100%;
+    height: auto;
     border: 1px solid black;
     box-shadow: 2px 2px 5px gray;
 }
