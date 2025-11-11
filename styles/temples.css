@@ -5,8 +5,7 @@
 }
 
 header, main, footer, figure {
-    max-width: 640px;
-    margin: 1rem auto;
+    max-width: 1000px;
 }
 
 body {
@@ -15,19 +14,23 @@ body {
 }
 
 header {
+    width: 100%;
     color: white;
     text-align: center;
-    margin-top: 0;
+    margin: 0 0 0;
     padding: 1.5rem;
     position: relative;
     background-color: rgb(102, 82, 159);
     border: 1px solid black;
 }
 
-header h1 {
+.title-1 {
+    float: left;
+    margin-left: 1.5rem;
+    margin-top: .5rem;
     color: white;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 2rem;
     background-color: rgb(102, 82, 159);
 }
 
@@ -46,13 +49,10 @@ header h1 {
         display: none;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        margin-left: 0;
         margin-right: 0;
-    
-        text-align: center;
+        text-align: right;
         text-decoration: none;
         color: white;
-    
         border-bottom: 1px solid black;
         max-width: 100%;
     }
@@ -74,12 +74,31 @@ header h1 {
     #menu::before {
         content: "≡";
     }
+
+    .figures {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 main {
+    position: relative;
+}
+
+.title-2 {
+    position: absolute;
+    top: 2rem;
+    left: 29rem;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+.figures { 
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     background-color: white;
+    padding-top: 6rem;
 }
 
 figure {
@@ -88,10 +107,11 @@ figure {
 }
 
 figure img {
-    max-width: 100%;
-    height: auto;
+    width: 300px;
+    height: 150px;
     border: 1px solid black;
     box-shadow: 2px 2px 5px gray;
+    margin: 1rem;
 }
 
 figcaption {
