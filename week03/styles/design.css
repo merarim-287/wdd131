@@ -24,11 +24,15 @@ h1 {
 
 main {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
 }
 
-h2 {
+main h2 {
+    grid-column: span 2;
+    text-align: center;
     color: navy;
-    text-align: left;
+    
 }
 
 article p {
