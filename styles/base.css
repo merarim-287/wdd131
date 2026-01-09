@@ -1,0 +1,67 @@
+:root {
+    --primary: #FFFFFA;
+    --secondary: #515052;
+    --accent-1: #000103;
+    --accent-2: #333138;
+    --accent-3: #FF312E;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--accent-3);
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 0;
+    background-color: var(--accent-1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+main h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.card-1, .card-2 {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h2, h3 {
+    background-color: var(--accent-2);
+    color: var(--primary);
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 1px 1px 3px gray;
+    border-radius: 10px 10px 0 0;
+}
+
+.card 
+
+
+
