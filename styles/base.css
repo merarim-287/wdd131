@@ -61,7 +61,52 @@ h2, h3 {
     border-radius: 10px 10px 0 0;
 }
 
-.card 
+.profile {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin-top: .5rem;
+    margin-right: 2rem;    border: 1px solid black;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.card-1 p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.card-1 h4 {
+    text-align: center; 
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding-top: 2rem;
+}
+
+hr {
+    width:  80%;;
+    margin: 0 auto;
+}
+
+.utah {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 1rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px gray;
+}
 
 
+.card-2 ul{
+    padding: 5rem;
+    font-size: 1.5rem;
+}
 
+.card-2 li {
+    margin-bottom: 1rem;
+}
+
+footer {
+    
+}
