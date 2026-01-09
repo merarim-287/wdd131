@@ -1,3 +1,3 @@
 
-document.getElementById("currentYear").InnerHTML = document.currentYear;
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
