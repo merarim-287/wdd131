@@ -67,7 +67,7 @@ main h1 {
     margin-right: 3rem;
 }
 
-h2, h3 {
+h2, h4 {
     background-color: var(--accent-2);
     color: var(--primary);
     padding: .5rem;
@@ -94,7 +94,7 @@ h2, h3 {
     margin: 1rem;
 }
 
-.card-1 h4 {
+.card-1 h3 {
     text-align: center; 
     font-size: 2rem;
     margin: 1rem 0;
