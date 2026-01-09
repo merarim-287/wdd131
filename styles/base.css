@@ -6,6 +6,10 @@
     --accent-3: #FF312E;
 }
 
+header {
+    border: 1px solid black;
+}
+
 #course-title {
     display: block;
     text-align: center;
@@ -30,6 +34,12 @@ nav a {
     font-size: 2rem;
     font-weight: 500;
     padding: .5rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: rgb(194, 67, 116);
 }
 
 main h1 {
