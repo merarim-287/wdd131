@@ -1,6 +1,6 @@
 const input = document.querySelector('#favchap');
 const button = document.querySelector('button');
-const list = document.querySelector('list');
+const list = document.querySelector('ul');
 
 button.addEventListener('click', function () {
     
@@ -9,6 +9,7 @@ button.addEventListener('click', function () {
     li.textContent = input.ariaValueMax;
 
     const deleteButton = document.createElement('button');
+    
     deleteButton.textContent = "❌";
 
     li.append(deleteButton);
@@ -17,7 +18,7 @@ button.addEventListener('click', function () {
 
     input.value = "";
     input.focus();
-})
+});
 
 
 
