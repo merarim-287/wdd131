@@ -2,9 +2,9 @@ body {
     font-family: 'Roboto', san-serif;
 }
 
-h1 {
+header {
     background-color: rgb(127, 127, 184);
-    color: white;
+    color: black;
     padding: 1rem;
     
 }
