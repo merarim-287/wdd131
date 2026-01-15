@@ -3,6 +3,12 @@ const button = document.querySelector('button');
 const list = document.querySelector('ul');
 
 button.addEventListener('click', function () {
+
+    if (input.value.trim() == "") {
+        alert("Enter a chapter");
+        input.focus();
+        return;
+    }
     
     const li = document.createElement('li');
 
@@ -11,6 +17,10 @@ button.addEventListener('click', function () {
     const deleteButton = document.createElement('button');
     
     deleteButton.textContent = "❌";
+
+    deleteButton.addEventListener('click', function () {
+        list.removeChild(li);
+    })
 
     li.append(deleteButton);
 
