@@ -6,7 +6,7 @@ button.addEventListener('click', function () {
     
     const li = document.createElement('li');
 
-    li.textContent = input.ariaValueMax;
+    li.textContent = input.value;
 
     const deleteButton = document.createElement('button');
     
