@@ -1,0 +1,29 @@
+header {
+    background-color: purple;
+    color: white;
+}
+
+header p {
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 1.5rem;
+}
+
+#menu nav { 
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+
+#menu::before nav{
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
