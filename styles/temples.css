@@ -1,3 +1,9 @@
+:root {
+    --accent1-color: #331E36;
+    --accent2-color: #41337A;
+    --accent3-color: #6EA4BF;
+}
+
 header {
     background-color: purple;
     color: white;
