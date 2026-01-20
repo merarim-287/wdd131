@@ -54,7 +54,7 @@ header p {
     color: white;
     margin: 0;
     padding: 0;
-    background-color: none;
+    background-color: transparent;
 }
 
 .navigation a {
@@ -81,18 +81,47 @@ header p {
 }
 
 main {
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 1rem;
 }
 
 h1 {
     font-size: 1rem;
-    weight: bold;
+    font-weight: bold;
     background-color: white; 
     color: black;
-    text-align: cneter;
+    text-align: center;
 }
 
 figure {
-    display: grid;
+    background-color: white;
+}
+
+figure img {
+    width: 200px;
+    height: auto;
+    display: block;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 15px;
+}
+
+footer {
+    background-color: var(--accent1-color);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+#currentYear, #lastModified {
+    color: yellow;
 }
