@@ -90,11 +90,12 @@ main {
 }
 
 h1 {
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: bold;
     background-color: white; 
     color: black;
     text-align: center;
+    padding: 1rem;
 }
 
 figure {
@@ -112,6 +113,8 @@ figure img {
 figcaption {
     text-align: center;
     font-size: 15px;
+    font-weight: bold; 
+    padding: 15px;
 }
 
 footer {
