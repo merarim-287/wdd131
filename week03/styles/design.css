@@ -14,22 +14,19 @@ marquee {
     background-color: #8c8585;
 }
 
-header br {
-    background-color: gray;
-    }
-
 h1 {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 main {
     display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 1.5rem;
 }
 
 h2 {
     color: navy;
-    text-align: left;
-    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / -1;
 }
 
 article p {
@@ -37,9 +34,14 @@ article p {
 }
 
 .callout {
-    color: #777;
+    color: rgb(186, 175, 175);
     background-color: #702963;
     padding: 1rem;
+}
+
+.callout h3 {
+    text-align: center;
+    margin-top: 1rem;
 }
 
 footer {
