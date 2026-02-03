@@ -1,0 +1,27 @@
+:root {
+    --primary-color: #651D1E;
+    --secondary-color: #23244C;
+    --accent-color:#FFFFFE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    color: black;
+    text-shadow: 2px 2px 5px gray;
+    padding: .5rem;
+    margin: 0;
+}
+
+.hero {
+    display: block;
+    width: 400px;
+    border-top: 20px 
+}
