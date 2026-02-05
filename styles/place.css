@@ -29,8 +29,6 @@ header {
 .hero {
     position: relative;
     display: block;
-    width: 400px;
-    height: auto;
 }
 
 .info-1 {
