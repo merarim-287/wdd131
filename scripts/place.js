@@ -4,4 +4,8 @@ document.getElementById("lastModified").textContent = document.lastModified;
 const temperature = 57;
 const windSpeed = 5;
 
-function calculateEindChill
+function calculateEindChill(temp, speed) {
+    return (
+        35.74
+    )
+}
