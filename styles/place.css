@@ -31,10 +31,14 @@ header {
     display: block;
 }
 
-.info-1 {
-    position: absolute;
-    top: 8rem;
-    left: 20px;
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-1, .weather {
+    position: static;
 }
 
 .data {
@@ -66,10 +70,6 @@ header {
 }
 
 .weather {
-    position: absolute;
-    bottom: 5rem;
-    right: 2rem;
-
     display: grid;
     grid-template-columns: auto 1fr;
     column-gap: .25rem;
