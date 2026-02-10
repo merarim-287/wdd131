@@ -1,0 +1,32 @@
+:root {
+    --primary: #2B2D42; 
+    --seconday: #8D99AE; 
+    --accent-1: #EDF2F4; 
+    --accent-2: #EF233C; 
+    --accent-3: #D90429;
+}
+
+body {
+    background-color: var(--accent-3);
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--primary);
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    float: left;
+    background-color: var(--accent-1);
+}
+
+header h1 {
+    color: white;
+    padding: 1rem;
+    margin-top: 0;
+    text-shadow: 2px 2px 5px solid gray;
+}
