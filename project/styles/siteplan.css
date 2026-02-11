@@ -47,30 +47,28 @@ main img {
 
 main p {
     position: absolute;
-    top: 15rem;
-    right: 7rem;
-    margin-left: 1rem;
-    margin-top: 0;
+    top: 10rem;
+    right: 55rem;
+    margin: 5rem 1rem 3rem 6rem;
     background-color: var(--seconday);
     opacity: .8;
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 1rem;
     border: 1px solid black;
 }
 
 main ul{
     position: absolute;
-    bottom: 8rem;
-    margin-left: 1rem;
+    bottom: 3rem;
+    margin: 2rem 4rem 3rem 5.5rem;
     background-color: var(--seconday);
     opacity: .8;
-    font-size: 1rem;
     border: 1px solid black;
 }
 
 main li {
     margin: 1rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
 footer {
