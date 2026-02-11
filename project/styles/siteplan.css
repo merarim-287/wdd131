@@ -7,18 +7,18 @@
 }
 
 body {
-    background-color: var(--accent-3);
+    background-color: rgb(183, 159, 159);
 }
 
 header {
     text-align: center;
-    font-size: 2rem;
     font-weight: bold;
     background-color: var(--primary);
+    border: 2px solid black;
 }
 
 header img {
-    width: 80px;
+    width: 100px;
     height: auto;
     float: left;
     background-color: var(--accent-1);
@@ -28,5 +28,58 @@ header h1 {
     color: white;
     padding: 1rem;
     margin-top: 0;
-    text-shadow: 2px 2px 5px solid gray;
+    font-family: "Cedarville Cursive", cursive;
+    font-size: 3rem;
+    margin-bottom: 0;
 }
+
+main img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+
+.hero {
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+
+main p {
+    position: absolute;
+    top: 15rem;
+    right: 7rem;
+    margin-left: 1rem;
+    margin-top: 0;
+    background-color: var(--seconday);
+    opacity: .8;
+    font-size: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+main ul{
+    position: absolute;
+    bottom: 8rem;
+    margin-left: 1rem;
+    background-color: var(--seconday);
+    opacity: .8;
+    font-size: 1rem;
+    border: 1px solid black;
+}
+
+main li {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+    padding: .5rem;
+    border: 2px solid black;
+    margin-bottom: 0;
+}
+
+ 
