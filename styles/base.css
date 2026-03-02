@@ -1,0 +1,154 @@
+:root {
+    --primary: #FFFFFA;
+    --secondary: #515052;
+    --accent-1: #000103;
+    --accent-2: #333138;
+    --accent-3: #FF312E;
+}
+
+header {
+    border: 1px solid black;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--accent-3);
+    padding: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 0;
+    background-color: var(--accent-1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Oswald;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: .5rem;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: rgb(194, 67, 116);
+}
+
+main {
+    max-width: 1500px;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card-1, .card-2 {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.card-1 {
+    margin-left: 3rem;
+}
+
+.card-2 {
+    margin-right: 3rem;
+}
+
+h2, h4 {
+    background-color: var(--accent-2);
+    color: var(--primary);
+    padding: .5rem;
+    font-size: 2rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 0;
+    text-shadow: 1px 1px 3px gray;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin-top: .5rem;
+    margin-right: 2rem;    border: 1px solid black;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.card-1 p {
+    margin: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.card-1 h3 {
+    text-align: center; 
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding-top: 2rem;
+}
+
+hr {
+    width:  80%;;
+    margin: 0 auto;
+}
+
+.utah {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin: 1rem;
+    border: 1px solid black;
+    box-shadow: 1px 1px 3px gray;
+}
+
+
+.card-2 ul{
+    padding: 5rem;
+    font-size: 1.2rem;
+}
+
+.card-2 li {
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--secondary);
+    color: white;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+#currentYear {
+    color: white; 
+    font-size: 1.5rem;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0;
+}
