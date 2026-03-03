@@ -141,7 +141,7 @@ hr {
 }
 
 footer {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     color: white;
     text-align: center;
     padding-top: .5rem;
