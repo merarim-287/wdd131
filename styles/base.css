@@ -14,9 +14,8 @@ header {
     display: block;
     text-align: center;
     font-size: 2rem;
-    color: black;
-    text-shadow: 2px 2px 4px gray;
-    background-color: var(--accent-1);
+    color: white;
+    background-color: var(--accent-3);
     padding: 1.5rem;
 }
 
