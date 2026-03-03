@@ -6,6 +6,10 @@
     --accent-3: #4A1942;
 }
 
+body {
+    background: linear-gradient(to top, #000000, #4a4a4a, #ffffff);
+}
+
 header {
     border: 1px solid black;
 }
@@ -49,8 +53,10 @@ main {
 }
 
 main h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
+    color: white;
+    text-shadow: 3px 3px 6px black;
 }
 
 .cards {
@@ -64,6 +70,7 @@ main h1 {
     border: 1px solid black;
     border-radius: 10px;
     background-color: white;
+    box-shadow:  3px 3px 6px black;
 }
 
 .card-1 {
@@ -91,7 +98,8 @@ h2, h4 {
     height: auto;
     float: right;
     margin-top: .5rem;
-    margin-right: 2rem;    border: 1px solid black;
+    margin-right: 2rem;    
+    border: 2px solid black;
     box-shadow: 2px 2px 4px gray;
 }
 
