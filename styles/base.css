@@ -1,9 +1,9 @@
 :root {
-    --primary: #FFFFFA;
-    --secondary: #515052;
-    --accent-1: #000103;
-    --accent-2: #333138;
-    --accent-3: #FF312E;
+    --primary: #050404;
+    --secondary: #2E1C2B;
+    --accent-1: #EAEAEA;
+    --accent-2: #893168;
+    --accent-3: #4A1942;
 }
 
 header {
@@ -14,8 +14,9 @@ header {
     display: block;
     text-align: center;
     font-size: 2rem;
-    color: white;
-    background-color: var(--accent-3);
+    color: black;
+    text-shadow: 2px 2px 4px gray;
+    background-color: var(--accent-1);
     padding: 1.5rem;
 }
 
@@ -29,6 +30,7 @@ nav {
 
 nav a {
     color: white;
+    text-shadow: 2px 2px 4px black;
     text-decoration: none;
     font-family: Oswald;
     font-size: 2rem;
@@ -39,7 +41,8 @@ nav a {
 
 nav a:hover {
     transform: scale(1.2);
-    color: rgb(194, 67, 116);
+    color: var(--secondary);
+    text-shadow: 2px 2px 4px gray;
 }
 
 main {
@@ -61,6 +64,7 @@ main h1 {
 .card-1, .card-2 {
     border: 1px solid black;
     border-radius: 10px;
+    background-color: white;
 }
 
 .card-1 {
@@ -72,14 +76,14 @@ main h1 {
 }
 
 h2, h4 {
-    background-color: var(--accent-2);
-    color: var(--primary);
+    background-color: var(--accent-1);
+    color: white;
+    text-shadow: 2px 2px 5px black;
     padding: .5rem;
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
     margin-top: 0;
-    text-shadow: 1px 1px 3px gray;
     border-radius: 10px 10px 0 0;
 }
 
