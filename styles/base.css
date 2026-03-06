@@ -55,8 +55,8 @@ main {
 main h1 {
     font-size: 3rem;
     text-align: center;
-    color: white;
-    text-shadow: 3px 3px 6px black;
+    color: black;
+    text-shadow: 3px 3px 6px rgb(114, 110, 110);
 }
 
 .cards {
