@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link href="https://coolors.co/palette/651d1e-23244c-fffffe">
+</head>
+
+<body>
+    <header>
+        <h2>Cordoba, Spain</h2>
+    </header>
+    <main>
+        <section class="empty-container">
+        </section>
+        <section class="hero">
+            <img src="images/cordoba.webp" srcset="images/cordoba-400.webp 400w, images/cordoba-1100.webp 1100w"
+                sizes="100vw" alt="cordoba, spain">
+        </section>
+        <div class="info-1">
+            <section class="data">
+                <h2>Data</h2>
+
+                <label>Area:</label>
+                <span>1,253 km².</span>
+
+                <label>Population:</label>
+                <span>324,902 people.</span>
+
+                <label>Capital:</label>
+                <span>Cordoba (provincial capital)</span>
+
+                <label>Language:</label>
+                <span>Spanish</span>
+
+                <label>Time Zone:</label>
+                <span>CET / CEST</span>
+
+                <label>Currency:</label>
+                <span>Euro (EUR)</span>
+
+                <label>Internet TLD:</label>
+                <span>.es</span>
+            </section>
+        </div>
+
+        <section class="weather">
+            <h2>Weather <span class="emoji">🌦️</span></h2>
+            <label>Temperature:</label><span>57°F</span>
+            <label>Condition:</label><span>Sunny</span>
+            <label>Wind Chill:</label><span id="windchill"></span>
+        </section>
+
+    </main>
+    <footer>
+        <p>©️<span id="currentYear"></span> ✨Merari M. Gonzalez ✨ Utah E.U.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

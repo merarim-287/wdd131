@@ -1,13 +1,9 @@
 :root {
-    --primary: #050404;
-    --secondary: #2E1C2B;
-    --accent-1: #EAEAEA;
-    --accent-2: #893168;
-    --accent-3: #4A1942;
-}
-
-body {
-    background: linear-gradient(to top, #000000, #4a4a4a, #ffffff);
+    --primary: #FFFFFA;
+    --secondary: #515052;
+    --accent-1: #000103;
+    --accent-2: #333138;
+    --accent-3: #FF312E;
 }
 
 header {
@@ -28,12 +24,11 @@ nav {
     justify-content: space-evenly;
     gap: 1rem;
     padding: 0;
-    background-color: var(--accent-2);
+    background-color: var(--accent-1);
 }
 
 nav a {
     color: white;
-    text-shadow: 2px 2px 4px black;
     text-decoration: none;
     font-family: Oswald;
     font-size: 2rem;
@@ -43,9 +38,8 @@ nav a {
 }
 
 nav a:hover {
-    transform: scale(1.4);
-    color: white;
-    text-shadow: 2px 2px 4px black;
+    transform: scale(1.2);
+    color: rgb(194, 67, 116);
 }
 
 main {
@@ -53,10 +47,8 @@ main {
 }
 
 main h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
-    color: black;
-    text-shadow: 3px 3px 6px rgb(114, 110, 110);
 }
 
 .cards {
@@ -69,8 +61,6 @@ main h1 {
 .card-1, .card-2 {
     border: 1px solid black;
     border-radius: 10px;
-    background-color: white;
-    box-shadow:  3px 3px 6px black;
 }
 
 .card-1 {
@@ -82,13 +72,14 @@ main h1 {
 }
 
 h2, h4 {
-    background-color: var(--primary);
-    color: white;
+    background-color: var(--accent-2);
+    color: var(--primary);
     padding: .5rem;
     font-size: 2rem;
     font-weight: 800;
     text-align: center;
     margin-top: 0;
+    text-shadow: 1px 1px 3px gray;
     border-radius: 10px 10px 0 0;
 }
 
@@ -97,14 +88,14 @@ h2, h4 {
     height: auto;
     float: right;
     margin-top: .5rem;
-    margin-right: 2rem;    
-    border: 2px solid black;
+    margin-right: 2rem;    border: 1px solid black;
     box-shadow: 2px 2px 4px gray;
 }
 
 .card-1 p {
     margin: 1rem;
     font-size: 1.5rem;
+    margin: 1rem;
 }
 
 .card-1 h3 {
@@ -139,7 +130,7 @@ hr {
 }
 
 footer {
-    background-color: var(--primary);
+    background-color: var(--secondary);
     color: white;
     text-align: center;
     padding-top: .5rem;
@@ -156,7 +147,7 @@ footer p {
 }
 
 #lastModified {
-    color: white;
+    color: yellow;
     font-size: 1rem;
     padding-bottom: 1rem;
     margin-top: 0;
