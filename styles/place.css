@@ -20,6 +20,21 @@ header {
     margin-bottom: 0;
 }
 
+h1::after {
+    content: "";
+    display: block; 
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
+
 .empty-container {
     padding: 1rem;
     background-color: var(--secondary-color);
