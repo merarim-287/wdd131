@@ -58,25 +58,58 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+        templeName: "Oquirrh Mountain Utah",
+        location: "South Jordan, Utah, United States",
+        dedicated: "2009, August, 21",
+        area: 60000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/oquirrh-mountain-utah-temple/oquirrh-mountain-utah-temple-400x250.jpg"
+    },
+    {
+        templeName: "Draper Utah",
+        location: "Draper, Utah, United States",
+        dedicated: "2009, March, 20",
+        area: 58000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/draper-utah-temple/draper-utah-temple-400x250.jpg"
+    },
+    {
+        templeName: "San Diego California",
+        location: "San Diego, California, United States",
+        dedicated: "1993, April, 25",
+        area: 72000,
+        imageUrl:
+            "https://churchofjesuschristtemples.org/assets/img/temples/san-diego-california-temple/san-diego-california-temple-400x250.jpg"
+    }
+
 ];
 
-function displayTemples(temples) {
-    const container = document.querySelector("#temple-cards");
-    container.innerHTML = ""; // clears previous cards
 
+function createTempleCard() {
     temples.forEach(temple => {
-        const card = document.createElement("section");
+        let card = document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("img");
 
-        card.innerHTML = `
-      <h3>${temple.templeName}</h3>
-      <p><strong>Location:</strong> ${temple.location}</p>
-      <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-      <p><strong>Area:</strong> ${temple.area} sq ft</p>
-      <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-    `;
+        name.textContent = temple.templeName;
+        location.InnerHTML = '<span class="label">Location:</span> ${temple.location}';
+        dedication.innerHTML = '<span class="label">Dedicated:</span> ${temple.dedicated)';
+        area.innerHTML = '<span class=label">Size:</span> ${temple.area} sq ft';
+        img.setAttribute("src", temple.imageUrl);
+        img.setAttribute("alt", '${temple.templeName} Temple');
+        img.setAttribute("loading", "lazy");
 
-        container.appendChild(card);
+        card.appendChild(name);
+        card.appendChild(location);
+        card.appendChild(dedication);
+        card.appendChild(area);
+        card.appendChild(img);
+
+        document.querySelector(".res-grid").appendChild(card);
     });
 }
 
