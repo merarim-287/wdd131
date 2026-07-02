@@ -11,26 +11,32 @@
 */
 
 header {
-    background-color: var(--second)
+    padding: .5rem;
 }
 
 #course-title {
+    background-color: var(--second);
     display: block;
     text-align: center;
     color: white;
     font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem;
 }
 
 nav { 
     display: flex;
     justify-content: space-around;
     gap: 1rem;
+    background-color: var(--first);
+    padding: 1rem;
 }
 
 a { 
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 a:hover {
