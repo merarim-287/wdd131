@@ -98,7 +98,7 @@ h2 {
 .profile p {
     padding: 2rem 2rem 0 2rem; 
     font-size: 1.4rem;
-    font-weight: 400px;
+    font-weight: 400;
     padding: 1rem;
     color: var(--first);
     background-color: var(--fifth);
@@ -156,14 +156,18 @@ hr {
 
 footer {
     max-width: 100%;
-    color: white; 
     background-color: var(--first);
     text-align: center;
-    font-size: 1rem;
-    padding: 1rem;
+    padding: .5rem;
 }
 
-.span {
-    color: var(--third);
-    font-size: 1rem;
+footer p {
+    color: var(--fourth);
+    font-size: 1.5rem;
 }
+
+#currentYear, #lastModified {
+    color: var(--third);
+    margin-bottom: 1rem;
+}
+
