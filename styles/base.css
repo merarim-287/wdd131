@@ -154,10 +154,21 @@ hr {
     background-color: var(--fifth);
 }
 
-li a {
+.card ul li {
     text-decoration: none;
     font-size: 1.5rem;
     padding: 2rem 0 3rem 0;
+}
+
+.card ul li a {
+    text-decoration: none;
+    color: var(--first);
+    background-color: var(--fifth);
+}
+
+.card ul li a:hover {
+    color: var(--second);
+    text-shadow: 1px 1px 3px var(--third);
 }
 
 footer {
