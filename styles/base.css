@@ -154,6 +154,12 @@ hr {
     background-color: var(--fifth);
 }
 
+li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2rem 0 3rem 0;
+}
+
 footer {
     max-width: 100%;
     background-color: var(--first);
