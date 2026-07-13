@@ -1,34 +1,53 @@
 :root {
-    
+    --first-color: #323232;
+    --second-color: #0F0C29;
+}
+
+body {
+    max-width: 400px;
 }
 
 header {
-    
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    max-width: 400px;
+    color: white;
+    background-color: var(--first-color);
 }
 
 header p {
-
+    
 }
 
 nav {
     display: flex;
+    gap: 1rem;
 }
 
-nav a {}
+nav a {
+    text-decoration: none;
+    color: white;
+}
 
 h1 {
     text-align: center;
     font-size: 2.5rem;
     font-family: "Playfair Display", serif;
 }
+
+.container {
+    display: grid;
+}
+
 figure {
     max-width: 300px;
     height: auto;
-    margin-top: 2rem;
+    margin: 2rem 3rem 2rem 3rem;
 }
 
 figure img {
-    max-width: 200px;
+    max-width: 250px;
     height: auto;
     border: 2px solid black;
     box-shadow: 2px 2px 5px gray;
@@ -42,19 +61,19 @@ figcaption {
 
 footer {
     max-width: 100%;
-    background-color: var(--first);
+    background-color: var(--second-color);
     text-align: center;
     padding: .5rem;
     border: 1px solid black;
 }
 
 footer p {
-    color: var(--fourth);
+    color: white;
     font-size: 1rem;
 }
 
 #currentYear,
 #lastModified {
-    color: var(--third);
+    color: yellow;
     margin-bottom: 1rem;
 }
