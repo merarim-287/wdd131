@@ -1,0 +1,48 @@
+header {
+    
+}
+
+header p {
+
+}
+
+nav {
+    display: flex;
+}
+
+figure {
+    max-width: 300px;
+    height: auto;
+    margin-top: 2rem;
+}
+
+figure img {
+    max-width: 200px;
+    height: auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+figcaption {
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+footer {
+    max-width: 100%;
+    background-color: var(--first);
+    text-align: center;
+    padding: .5rem;
+}
+
+footer p {
+    color: var(--fourth);
+    font-size: 1.5rem;
+}
+
+#currentYear,
+#lastModified {
+    color: var(--third);
+    margin-bottom: 1rem;
+}
