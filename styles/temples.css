@@ -4,30 +4,30 @@
 }
 
 body {
-    max-width: 400px;
+    max-width: 500px;
 }
 
 header {
     display: flex;
     flex-direction: row;
-    gap: 5rem;
-    max-width: 400px;
+    max-width: 500px;
     color: white;
     background-color: var(--first-color);
+    border: 2px solid black;
 }
 
 header p {
-    
+    flex-direction: row;
+    margin: 1rem 1.5rem 1rem .5rem;
+    font-size: 1rem;
 }
 
 nav {
-    display: flex;
-    gap: 1rem;
+    
 }
 
 nav a {
-    text-decoration: none;
-    color: white;
+    
 }
 
 h1 {
