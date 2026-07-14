@@ -25,14 +25,9 @@ header p {
     font-size: 1.7rem;
 }
 
-nav {
-    display: none;
-}
-
 #menu {
     font-weight: 700;
     text-decoration: none;
-    padding: 0.5rem 0.75rem;
     background-color: var(--first-color);
     color: white;
     font-size: 2rem;
@@ -40,6 +35,40 @@ nav {
 
 #menu::before {
     content: "≡";
+}
+
+.drop-down {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.drop-down li {
+    display: none;
+}
+
+.drop-down a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    padding: 0.75rem;
+}
+
+.drop-down a:hover, .drop-down:active {
+    color: white;
+    background-color: var(--second-color);
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "×"
 }
 
 h1 {
