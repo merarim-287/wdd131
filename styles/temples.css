@@ -47,13 +47,13 @@ header p {
     max-width: 200px;
 }
 
-.show {
-    display: flex;
-    flex-direction: column;
-}
-
 .drop-down li {
     display: block;
+}
+
+.drop-down.show {
+    display: flex;
+    flex-direction: column;
 }
 
 .drop-down a {
@@ -64,7 +64,7 @@ header p {
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
-    padding: 0.75rem;
+    padding: 0.7rem;
 }
 
 .drop-down a:hover{
@@ -89,6 +89,8 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
     font-family: "Playfair Display", serif;
+    color: var(--second-color);
+    background-color: white;
 }
 
 .container {
