@@ -1,0 +1,20 @@
+@media (min-width: 500px) {
+    body {
+        max-width: 1000px auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .drop-down {
+        display: flex;
+        text-decoration: none;
+        border: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

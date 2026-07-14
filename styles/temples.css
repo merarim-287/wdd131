@@ -4,7 +4,7 @@
 }
 
 body {
-    max-width: 500px;
+    margin: 0 auto;
     font-family: "Playfair Display", serif;
 }
 
@@ -61,7 +61,6 @@ header p {
     text-align: right;
     text-decoration: none;
     color: white;
-    border: 1px solid white;
     font-weight: 700;
     transition: 0.5s;
     font-size: clamp(1rem, 2vmin, 1.5rem);
@@ -70,6 +69,7 @@ header p {
 
 .drop-down a:hover{
     color: white;
+    border: .5px solid white;
     background-color: blue;
 }
 
