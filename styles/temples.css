@@ -44,7 +44,6 @@ header p {
     display: none;
     list-style: none;
     margin: 0;
-    max-width: 200px;
 }
 
 .drop-down li {
@@ -54,6 +53,7 @@ header p {
 .drop-down.show {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .drop-down a {
@@ -73,8 +73,9 @@ header p {
     background-color: blue;
 }
 
-.show li {
+.drop-down .show li {
     display: block;
+    align-items: center;
 }
 
 #menu.show::before {
