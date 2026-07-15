@@ -21,8 +21,8 @@ header {
 
 header p {
     flex-direction: row;
-    margin: 1rem 1.5rem 1rem .5rem;
-    font-size: 1.7rem;
+    margin: .5rem;
+    font-size: 2rem;
 }
 
 #menu {
@@ -97,6 +97,7 @@ h1 {
 
 .container {
     display: grid;
+    justify-content: center;
 }
 
 figure {
