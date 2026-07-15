@@ -21,7 +21,7 @@ header {
 
 header p {
     flex-direction: row;
-    margin: .5rem;
+    margin-left: .5rem;
     font-size: 2rem;
 }
 
@@ -31,13 +31,14 @@ header p {
     background-color: var(--first-color);
     color: white;
     font-size: 2rem;
-    margin-right: 0;
+    margin: 0 1rem 0 0;
     border: none;
     cursor: grab;
 }
 
 #menu::before {
     content: "≡";
+    margin: 0 0 0 12rem;
 }
 
 .drop-down {
