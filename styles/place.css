@@ -9,8 +9,18 @@
 
 header {
     background-color: var(--secondary);
-
+    color: var(--primary);
+    text-align: center;
+    border: 1px solid black;
+    border-bottom: 10px solid var(--accent-3);
 }
+
+header h1 {
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+
 
 .hero img {
     width: 100%;
@@ -33,7 +43,7 @@ footer {
 
 footer p {
     color: var(--accent-2);
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #currentYear,
