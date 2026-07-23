@@ -1,0 +1,43 @@
+:root {
+    --primary: #121212;
+    --secondary: #911212;
+    --accent-1:#005236;
+    --accent-2: #F2F0EF;
+    --accent-3:#AB7743;
+}
+
+
+header {
+    background-color: var(--secondary);
+
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid black;
+    box-shadow: 3px 3px 6px gray;
+}
+
+.icon {
+    max-width: 50px;
+}
+
+footer {
+    max-width: 100%;
+    background-color: var(--primary);
+    text-align: center;
+    padding: .5rem;
+}
+
+footer p {
+    color: var(--accent-2);
+    font-size: 1.5rem;
+}
+
+#currentYear,
+#lastModified {
+    color: var(--accent-2);
+    margin-bottom: 1rem;
+}
