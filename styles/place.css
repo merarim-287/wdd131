@@ -101,8 +101,13 @@ header h1 {
 }
 
 .icon {
-    display: flex;
-    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.emoji {
+    display: none;
 }
 
 footer {
