@@ -7,9 +7,10 @@ const wind = 10;
 function calculateWindChill(t, w) {
     return 35.74 + (0.6215 * t)
         - (35.75 * Math.pow(w, 0.16));
+        +(0.4275 * t * Math.pow(w, 0.16));
 }
 
-let windChillValue = "NA";
+let windChillValue = "N/A";
 
 if (temp <= 50 && wind > 3) {
     windChillValue = Math.round(calculateWindChill(temp, wind)) + "°F";

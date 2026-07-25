@@ -3,7 +3,6 @@
         position: relative;
         margin: 0;
         line-height: 0;
-        
     }
 
     .one {
@@ -16,8 +15,8 @@
 
     .two {
         position: absolute;
-        top: 40rem;
-        left: 60rem;
+        top: 50rem;
+        left: 70rem;
         color: var(--primary);
         background-color: var(--accent-2);
     }
@@ -29,15 +28,30 @@
     .one, .two {
         border: 1px solid var(--primary);
         opacity: .85;
+        font-size: 1rem;
     }
 
     h2, h3 {
         background-color: var(--primary);
         margin-top: 0;
-        padding: .5rem;
+        padding: 1rem;
+        font-size: 3rem;
         }
     
     h3 {
         color: var(--accent-2);
     }
-}
+
+    article li {
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+    }
+
+    .area::before,.population::before,.capital::before,
+    .languages::before,.currency::before,.time-zone::before,
+    .calling-code::before,.internet-tld::before,.temperature::before,
+    .wind::before,.windchill::before {
+          font-size: 1.5rem;  
+        }
+    }
+
