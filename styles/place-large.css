@@ -1,6 +1,8 @@
 @media (min-width: 640px) {
     .hero {
         position: relative;
+        margin: 0;
+        line-height: 0;
         
     }
 
@@ -26,11 +28,16 @@
 
     .one, .two {
         border: 1px solid var(--primary);
-        opacity: .8;
+        opacity: .85;
     }
 
-    h2 {
+    h2, h3 {
         background-color: var(--primary);
+        margin-top: 0;
+        padding: .5rem;
         }
+    
+    h3 {
+        color: var(--accent-2);
     }
 }

@@ -14,7 +14,7 @@ header {
     color: var(--primary);
     text-align: center;
     border: 1px solid black;
-    border-bottom: 10px solid var(--primary);
+    border-bottom: 20px solid var(--primary);
 }
 
 header h1 {
@@ -43,7 +43,7 @@ header h1 {
     list-style: none;
 }
 
-.one h2, .two h2 {
+.one h2, .two h3 {
     text-align: center;
     font-size: 2rem;
 }
