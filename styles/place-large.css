@@ -1,0 +1,36 @@
+@media (min-width: 640px) {
+    .hero {
+        position: relative;
+        
+    }
+
+    .one {
+        position: absolute;
+        top: 20rem;
+        left: 5rem;
+        color: var(--accent-2);
+        background-color: var(--accent-1);
+    }
+
+    .two {
+        position: absolute;
+        top: 40rem;
+        left: 60rem;
+        color: var(--primary);
+        background-color: var(--accent-2);
+    }
+
+    .one ul, .two ul {
+        padding: 1rem;
+    }
+
+    .one, .two {
+        border: 1px solid var(--primary);
+        opacity: .8;
+    }
+
+    h2 {
+        background-color: var(--primary);
+        }
+    }
+}
