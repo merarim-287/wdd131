@@ -22,3 +22,5 @@ nav a:hover { /*required*/
 main {
     max-width: 1200px; /*limited width and centered on the screen horizontally, required */
 }
+
+/*layout column cards using grid*/
