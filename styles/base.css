@@ -1,11 +1,15 @@
-/*
-#E4007C mexican pink
-#C60F7B darker pink
-#003249 green blue
-#D61CD gray
-font-family: "Caacupe One",
-sans-serif;
-*/
+
+:root {
+    --color1: #E4007C; /*mexican pink*/
+    --color2: #C60F7B; /* darker pink*/
+    --color3: #003249; /*green blue*/
+    --color4: #D6D1CD; /*gray*/
+    --font: "Caacupe One", sans-serif;
+}
+
+header {
+    background-color: var(--color1);
+}
 
 header span {
     display: block; /*in order to center the logo and text. */
