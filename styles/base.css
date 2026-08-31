@@ -2,4 +2,23 @@
 #E4007C mexican pink
 #C60F7B darker pink
 #003249 green blue
-#D61CD gray/*
+#D61CD gray
+font-family: "Caacupe One",
+sans-serif;
+*/
+
+header span {
+    display: block; /*in order to center the logo and text. */
+}
+
+nav {
+    display: flex; /*required*/
+}
+
+nav a:hover { /*required*/
+    color: green;
+}
+
+main {
+    max-width: 1200px; /*limited width and centered on the screen horizontally, required */
+}
