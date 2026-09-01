@@ -58,10 +58,10 @@ nav a:hover { /*required*/
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 1rem;
-    min-width: 1200px; /*limited width and centered on the screen horizontally, required */
-    margin: 0 5rem 2rem 5rem;
+    max-width: 1200px; /*limited width and centered on the screen horizontally, required */
+    margin: 0 auto;
 }
 
 h2 {
@@ -72,11 +72,21 @@ h2 {
     font-weight: 595;
 }
 
+.card-1 {
+    max-width: 800px;
+}
+
+.card-2 {
+    max-width: 450px;
+}
+
 /*layout column cards using grid / required*/
 .card-1, .card-2 {
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
+    height: auto;
+    margin-bottom: 1.5rem;
 }
 
 .card-1 h3, .card-2 h3 {
@@ -93,27 +103,29 @@ h2 {
     grid-template-columns: 1fr auto;
     gap: 1rem;
     padding: 1rem;
+    margin: 1rem;
 }
 
 .top-section img {
     border: 1px solid black;
     box-shadow: 2px 2px 4px gray;
     max-width: 200px;
+    height: auto;
     margin: 1rem;
 }
 
-.top-section {
-    margin: 1rem;
+.top-section p {
+    padding: 1.5rem;
 }
 
 .card-1 p {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .bottom-section {
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 1rem;
 
 }
@@ -121,19 +133,19 @@ h2 {
 hr {
     width: 40rem;
     margin-left: 2rem;
-    margin-right: 20rem;
+    margin-right: 25rem;
 }
 
 .bottom-section img {
     max-width: 250px;
     height: auto;
-    margin: 0 0 auto 1rem;
+    margin: 0 0 auto .5rem;
     border: 12px solid black;
     box-shadow: 2px 2px 5px gray;
 }
 
 .bottom-section p {
-    margin: 0 auto 1rem;
+    margin: 0 10rem 0 0;
 }
 
 figcaption, h4 {
