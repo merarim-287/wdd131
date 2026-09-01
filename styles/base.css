@@ -42,8 +42,7 @@ nav ul {
 
 nav a { 
     text-decoration: none;
-    color: black;
-    text-shadow: 1px 1px 3px gray;
+    color: white;
     font-size: 2rem;
     font-weight: 600;
 }
