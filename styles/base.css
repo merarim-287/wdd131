@@ -68,3 +68,16 @@ h2 {
     gap: 2rem; 
     padding: 2rem;
 }
+
+img {
+    border: 1.5px solid black;
+}
+
+footer {
+    color: white; 
+    background-color: var(--color2);
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid black;
+    width: 100%;
+}
