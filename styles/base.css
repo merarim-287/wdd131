@@ -4,11 +4,12 @@
     --color2: #C60F7B; /* darker pink*/
     --color3: #003249; /*green blue*/
     --color4: #D6D1CD; /*gray*/
-    --font: "Caacupe One", sans-serif;
+    --font: "Jacques Francois", serif;
 }
 
 header {
-    background-color: var(--color1);
+    background-color: var(--color4);
+    width: 100%;
 }
 
 #course-title {
@@ -17,11 +18,32 @@ header {
     text-align: center;
     padding-top: 1.5rem;
     font-family: var(--font);
+    font-size: 2rem;
+    font-weight: 600;
 }
-
 
 nav {
     display: flex; /*required*/
+    width: 100%;
+    background-color: var(--color1);
+    padding: .6rem;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0 2rem .5rem 2rem;
+    list-style: none;
+}
+
+nav a { 
+    text-decoration: none;
+    color: var(--color3);
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 nav a:hover { /*required*/
@@ -29,7 +51,20 @@ nav a:hover { /*required*/
 }
 
 main {
-    max-width: 1200px; /*limited width and centered on the screen horizontally, required */
+    min-width: 1200px; /*limited width and centered on the screen horizontally, required */
+    background-color: var(--color4);
+    margin-top: 0;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1rem;
 }
 
 /*layout column cards using grid*/
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; 
+    padding: 2rem;
+}
