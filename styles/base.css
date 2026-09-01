@@ -1,33 +1,34 @@
-
 :root {
     --color1: #E4007C; /*mexican pink*/
     --color2: #C60F7B; /* darker pink*/
-    --color3: #003249; /*green blue*/
+    --color3: #003249; /*blue*/
     --color4: #D6D1CD; /*gray*/
-    --font: "Jacques Francois", serif;
+    --font1: "Jacques Francois", serif;
+    --font2: "Dancing Script", cursive;
 }
 
 header {
-    background-color: var(--color4);
+    background-color: var(--color3);
     width: 100%;
+    border: 1px solid black;
 }
 
 #course-title {
     display: block; /*in order to center the logo and text. */
-    color: var(--color3);
+    color: var(--color4);
     text-align: center;
-    padding-top: 1.5rem;
-    font-family: var(--font);
+    padding: 1rem;
+    font-family: var(--font1);
     font-size: 2rem;
     font-weight: 600;
 }
 
 nav {
     display: flex; /*required*/
-    width: 100%;
-    background-color: var(--color1);
+    background-color: var(--color2);
     padding: .6rem;
-    margin-bottom: 0;
+    margin-bottom: 0 4rem .5rem 4rem;
+    border-top: 1px solid black;
 }
 
 nav ul {
@@ -35,49 +36,125 @@ nav ul {
     justify-content: space-between;
     width: 100%;
     padding: 0;
-    margin: 0 2rem .5rem 2rem;
+    margin: 0 5rem .5rem 4rem;
     list-style: none;
 }
 
 nav a { 
     text-decoration: none;
     color: var(--color3);
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 nav a:hover { /*required*/
-    color: green;
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    font-size: 2.3rem;
+    font-family: var(--font2);
+    font-weight: 700;
+
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     min-width: 1200px; /*limited width and centered on the screen horizontally, required */
-    background-color: var(--color4);
-    margin-top: 0;
+    margin: 0 5rem 2rem 5rem;
 }
 
 h2 {
     text-align: center;
     padding-top: 1rem;
+    font-size: 3rem;
+    font-family: var(--font1);
+    font-weight: 595;
 }
 
-/*layout column cards using grid*/
-.card {
+/*layout column cards using grid / required*/
+.card-1, .card-2 {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.card-1 h3, .card-2 h3 {
+    text-align: center;
+    background-color: var(--color1);
+    margin-top: 0;
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+}
+
+.top-section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem; 
-    padding: 2rem;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-img {
-    border: 1.5px solid black;
+.top-section img {
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px gray;
+    max-width: 200px;
+    margin: 1rem;
+}
+
+.top-section {
+    margin: 1rem;
+}
+
+.card-1 p {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.bottom-section {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+
+}
+
+hr {
+    width: 40rem;
+    margin-left: 2rem;
+    margin-right: 20rem;
+}
+
+.bottom-section img {
+    max-width: 250px;
+    height: auto;
+    margin: 0 0 auto 1rem;
+    border: 12px solid black;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.bottom-section p {
+    margin: 0 auto 1rem;
+}
+
+figcaption, h4 {
+    color: black;
+    text-align: center;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 footer {
     color: white; 
-    background-color: var(--color2);
+    background-color: var(--color3);
     text-align: center;
-    padding: 1rem;
+    padding: 0;
     border: 1px solid black;
     width: 100%;
+    font-size: 1rem;
+}
+
+#currentyear, #lastModified {
+    color: white;
 }
