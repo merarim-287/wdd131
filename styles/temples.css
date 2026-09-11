@@ -29,6 +29,7 @@ header h1 {
     background-color: var(--primary-color);
     border: none;
     font-size: 3rem;
+    cursor: grabbing;
     
 }
 
@@ -45,8 +46,12 @@ nav a {
     text-decoration: none;
 }
 
-main h1 {
+h1 {
     font-size: 2rem;
+    text-align: center;
+}
+
+figure {
     text-align: center;
 }
 
@@ -60,8 +65,8 @@ figure img {
 }
 
 figcaption {
-    text-align: center;
     font-size: 15px;
+    font-weight: 400;
     font-family: var(--font);
     color: black; 
     background-color: white;
