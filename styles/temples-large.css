@@ -3,8 +3,17 @@
         text-align: center;
     }
 
+    #menu {
+        display: none;
+    }
+
     nav {
+        display: block;
+    }
+
+    nav ul {
         display: flex;
+        gap: 1rem;
     }
     
     main {

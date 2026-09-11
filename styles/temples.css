@@ -30,11 +30,16 @@ header h1 {
     border: none;
     font-size: 3rem;
     cursor: grabbing;
+    padding: 0;
     
 }
 
 nav {
     display: none;
+}
+
+nav.show {
+    display: block;
 }
 
 nav li {
@@ -62,11 +67,12 @@ figure img {
     max-width: 350px;
     height: auto;
     border: 1px solid black;
+    box-shadow: 3px 3px 6px gray;
 }
 
 figcaption {
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
     font-family: var(--font);
     color: black; 
     background-color: white;
