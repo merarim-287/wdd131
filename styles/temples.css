@@ -19,7 +19,7 @@ header {
     border: 1px solid black;
 }
 
-header h1 {
+h1 {
     font-size: 3rem;
     font-family: var(--font);
 }
@@ -65,7 +65,7 @@ nav li a:hover {
     color: black;
 }
 
-h1 {
+h2 {
     font-size: 2rem;
     text-align: center;
 }
