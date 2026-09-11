@@ -20,6 +20,14 @@
         gap: 1rem;
     }
 
+    nav a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
     
     main {
         grid-template-columns: 1fr 1fr 1fr;
