@@ -6,4 +6,5 @@ const nav = document.querySelector("nav");
 
 menuButton.addEventListener("click", () => {
     nav.classList.toggle("show");
-})
+    menuButton.classList.toggle("open");
+});

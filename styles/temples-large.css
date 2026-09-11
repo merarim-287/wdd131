@@ -3,6 +3,10 @@
         text-align: center;
     }
 
+    button {
+        display: none;
+    }
+
     #menu {
         display: none;
     }
@@ -15,6 +19,7 @@
         display: flex;
         gap: 1rem;
     }
+
     
     main {
         grid-template-columns: 1fr 1fr 1fr;
