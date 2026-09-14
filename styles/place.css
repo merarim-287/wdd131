@@ -9,10 +9,20 @@ header, main, footer {
     width: 100%;
 }
 
+header {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
+
+header, footer {
+    background-color: var(--first-color);
+}
 
 footer {
     color: white;
-    background-color: var(--color3);
     text-align: center;
     padding: 0;
     border: 1px solid black;
