@@ -1,0 +1,26 @@
+:root {
+    --first-color: #005F73;
+    --second-color: #001219;
+}
+
+header, main, footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
+
+footer {
+    color: white;
+    background-color: var(--color3);
+    text-align: center;
+    padding: 0;
+    border: 1px solid black;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#currentyear,
+#lastModified {
+    color: white;
+}
