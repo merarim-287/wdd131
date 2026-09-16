@@ -21,6 +21,37 @@ header, footer {
     background-color: var(--first-color);
 }
 
+.hero img {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.labels {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.labels .fact {
+    font-size: 1rem;
+}
+
+.labels ul {
+    list-style: none;
+    padding: 0;
+}
+
+.labels li {
+    display: flex;
+    gap: 1rem;
+    padding: .5rem 0;
+
+}
+
+.labels span {
+    font-weight: bold;
+}
+
 footer {
     color: white;
     text-align: center;
