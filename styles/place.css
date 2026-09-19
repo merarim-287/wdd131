@@ -52,6 +52,23 @@ header, footer {
     font-weight: bold;
 }
 
+.weather {
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+}
+
+.weather-icon img {
+    width: 80px;
+    height: auto;
+}
+
+.weather-emoji::after {
+    content: "🌦️";
+    font-size: 2rem;
+}
+
+
 footer {
     color: white;
     text-align: center;
