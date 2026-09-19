@@ -21,16 +21,13 @@
     }
 
     nav a {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 2rem;
-        padding: 1rem;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
     }
 
-    
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
     }
 
     figure {

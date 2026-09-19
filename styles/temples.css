@@ -9,6 +9,10 @@ main, footer {
     gap: 1rem;
 }
 
+main {
+    padding: 1rem;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -58,6 +62,8 @@ nav li {
 nav a {
     color: white;
     text-decoration: none;
+    font-family: var(--font);
+    padding: .5rem;
 }
 
 nav li a:hover {
@@ -76,14 +82,13 @@ figure {
 }
 
 figure img {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    max-width: 350px;
+    width: 100%;
     height: auto;
+    display: block;
     border: 1px solid black;
     box-shadow: 3px 3px 6px gray;
 }
+
 
 figcaption {
     font-size: 15px;
