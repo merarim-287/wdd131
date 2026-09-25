@@ -1,0 +1,23 @@
+@media (min-width: 500px) {
+    .hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .labels {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: gray;
+        padding: 1rem;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        background-color: gray;
+        padding: 1rem;
+    }
+}
