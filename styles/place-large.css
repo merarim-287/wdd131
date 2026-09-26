@@ -27,6 +27,24 @@
         background-color: gray;
         opacity: .8;
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .weathe-icon {
+        display: block;
+    }
+
+    .weather-icon img {
+        display: block;
+        width: 80px;
+        height: auto;
+    }
+
+    .weather-emoji {
+        display: none;
     }
 
     .labels h2, .weather h2 {

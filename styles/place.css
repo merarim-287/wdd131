@@ -59,8 +59,11 @@ header, footer {
 }
 
 .weather-icon img {
-    width: 80px;
-    height: auto;
+    display: none;
+}
+
+.weather-emoji {
+    display: block;
 }
 
 .weather-emoji::after {
