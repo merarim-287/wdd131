@@ -1,23 +1,45 @@
-@media (min-width: 500px) {
+@media (min-width: 1000px) {
     .hero {
         position: relative;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .hero img {
+        height: 100%; 
         width: 100%;
-        height: auto;
+        object-fit: cover;
     }
 
     .labels {
         position: absolute;
-        top: 20px;
-        left: 20px;
+        top: 8rem;
+        left: 4rem;
         background-color: gray;
+        opacity: .8;
         padding: 1rem;
     }
 
     .weather {
         position: absolute;
-        bottom: 20px;
-        right: 20px;
+        bottom: 10rem;
+        right: 2rem;
         background-color: gray;
+        opacity: .8;
         padding: 1rem;
     }
+
+    .labels h2, .weather h2 {
+        color: white;
+        background-color: black;
+        margin: 0;
+        padding: .5rem;
+        text-align: center;
+    }
+
+    .labels, .weather p, .weather-icon div {
+        padding: 1rem;
+    }
+
+
 }
