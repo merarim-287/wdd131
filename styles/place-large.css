@@ -20,6 +20,11 @@
         padding: 1rem;
     }
 
+    .labels, .weather {
+        border: 1px solid black;
+        box-shadow: 2px 2px 5px gray;
+    }
+
     .weather {
         position: absolute;
         bottom: 10rem;
