@@ -1,0 +1,13 @@
+img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+img.loaded {
+    opacity: 1;
+}
