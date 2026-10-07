@@ -1,0 +1,115 @@
+:root { 
+    --primary-color: #354f52;
+    --font: "Luxurious Roman", serif;
+}
+
+main, footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white; 
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: var(--font);
+}
+
+
+#menu {
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 3rem;
+    cursor: grabbing;
+    padding: 0;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.open::before {
+    content: "❌";
+    font-size: 1.5rem;
+}
+
+nav {
+    display: none;
+}
+
+nav.show {
+    display: block;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--font);
+    padding: .5rem;
+}
+
+nav li a:hover {
+    display: block;
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid black;
+    box-shadow: 3px 3px 6px gray;
+}
+
+
+figcaption {
+    font-size: 15px;
+    font-weight: 500;
+    font-family: var(--font);
+    color: black; 
+    background-color: white;
+    padding: 15px;
+}
+
+footer {
+    color: white;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 0;
+    border: 1px solid black;
+    width: 100%;
+    font-size: 1rem;
+}
+
+#currentyear,
+#lastModified {
+    color: white;
+}
