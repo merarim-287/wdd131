@@ -4,5 +4,126 @@
     --color-3: #533A7B;
     --color-4: #6969B3;
     --color-5: #98C1D9;
+    --font-1: "Arizonia", cursive;
+    --font-2: "Sancreek", serif;
 }
 
+body {
+    font-family: var(--font-1);
+    margin: 0;
+    padding: 0;
+}
+
+header,footer {
+    color: white;
+    background-color: var(--color-2);
+    font-family: var(--font-2);
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: var(--color-5);
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    padding: 2rem;
+    margin: 0;
+    font-family: var(--font-2);
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: var(--color-4);
+    padding-bottom: 1rem;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 1px 1px 3px yellow;
+    margin: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.hero {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero::before {
+    content: ""; 
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, #4B244A 0%, rgba(37, 23, 26, 0.7) 20%,
+    rgba(37, 23, 26, 0)60%,
+    #25171A 100%);
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.floating-p {
+    position: absolute;
+    top: 3rem;
+    left: 20%;
+    text-align: center;
+    color: white;
+}
+
+.floating-p h2 {
+    font-size: 6rem;
+    text-shadow: 0 0 8px black;
+    font-weight: 100;
+}
+
+.floating-p p {
+    font-size: 2rem;
+    text-shadow: 0 0 8px black;
+    font-family: var(--font-2)
+}
+
+.hero img.alchemist {
+   width: 600px;
+   height: auto;
+   position: absolute;
+   top: 30rem;
+   right: 5rem;
+   z-index: 5; 
+}
+
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
