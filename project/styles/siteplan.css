@@ -164,6 +164,19 @@ nav ul {
     margin-top: -0.5rem;
     padding: 10px;
 }
+.potions figcaption.price {
+    display: none;
+}
+
+.potions figcaption:hover .name {
+    display: none;
+}
+
+.potions figure:hover .price {
+    display: block;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
 
 .potions img {
     width: 200px;
