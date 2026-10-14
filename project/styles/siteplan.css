@@ -96,29 +96,30 @@ nav ul {
 .floating-p {
     position: absolute;
     top: 3rem;
-    left: 20%;
+    left: 1rem;
     text-align: center;
     color: white;
 }
 
 .floating-p h2 {
-    font-size: 6rem;
+    font-size: 8rem;
     text-shadow: 0 0 8px black;
     font-weight: 100;
 }
 
 .floating-p p {
-    font-size: 2rem;
+    font-size: 4rem;
     text-shadow: 0 0 8px black;
-    font-family: var(--font-2)
+    font-family: var(--font-2);
+    margin: 3rem;
 }
 
 .hero img.alchemist {
    width: 600px;
    height: auto;
    position: absolute;
-   top: 30rem;
-   right: 5rem;
+   top: 40rem;
+   right: 28rem;
    z-index: 5; 
 }
 
