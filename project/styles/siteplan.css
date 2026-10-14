@@ -95,8 +95,8 @@ nav ul {
 
 .floating-p {
     position: absolute;
-    top: 3rem;
-    left: 1rem;
+    top: 1rem;
+    left: 4rem;
     text-align: center;
     color: white;
 }
@@ -108,7 +108,7 @@ nav ul {
 }
 
 .floating-p p {
-    font-size: 4rem;
+    font-size: 3rem;
     text-shadow: 0 0 8px black;
     font-family: var(--font-2);
     margin: 3rem;
@@ -134,4 +134,9 @@ footer {
     text-align: center;
     font-size: 1.5rem;
     padding: 1rem;
+}
+
+#currentyear,
+#lastModified {
+    color: white;
 }
