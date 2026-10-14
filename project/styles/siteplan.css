@@ -138,16 +138,42 @@ nav ul {
 
 .potions {
     position: absolute;
-    bottom: 2rem;
+    top: 45rem;
     left: 50%;
-    display: flex;
-    gap: 2rem;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
     z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+.potions figure {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+    box-shadow: 0 0 5px yellow;
+}
+
+.potions figcaption {
+    color: white;
+    background-color: var(--color-1);
+    font-size: 1.5rem;
+    margin-top: -0.5rem;
+    padding: 0;
 }
 
 .potions img {
     width: 200px;
     height: 200px;
+}
+
+.potions img:hover {
+    filter: hue-rotate(40deg) drop-shadow(0 0 20px var(--color-4));
+    transform: scale(1.1);
+    border: 1px solid black;
 }
 
 .hero img.alchemist {
@@ -159,7 +185,7 @@ nav ul {
    z-index: 5; 
 }
 
-.hero img.alchemist:hover {
+.hero img.alchemist:hover{
     filter: drop-shadow(0 0 25px var(--color-4));
     transform: scale(1.05);
     transition: 0.3s ease;
