@@ -109,7 +109,9 @@ nav ul {
 
 .floating-p p {
     font-size: 3rem;
-    text-shadow: 0 0 8px black;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgb(5, 5, 4);
     font-family: var(--font-2);
     margin: 3rem;
 }
@@ -119,7 +121,7 @@ nav ul {
    height: auto;
    position: absolute;
    top: 40rem;
-   right: 28rem;
+   right: 22rem;
    z-index: 5; 
 }
 
