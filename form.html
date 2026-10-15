@@ -10,6 +10,64 @@
     <script src="scripts/form.js" defer></script>
 </head>
 <body>
-    
+    <header> 
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="product">Product name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Please select a product</option>
+            </select>
+            <fieldset>
+                <legend>Overall Rating</legend>
+                <label>
+                    <input type="radio" name="rating" value="1" required>
+                    1
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="2">
+                    2
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="3">
+                    3
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="4">
+                    4
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="5">
+                    5
+                </label>
+            </fieldset>
+
+            <label for="installDate">Date of instalation</label>
+            <input type="date" id="installDate" name="installDate" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <label><input type="checkbox" name="features" value="durability">Durability</label>
+                <label><input type="checkbox" name="features" value="design">Design</label>
+                <label><input type="checkbox" name="features" value="Ease of use">Ease of use</label>
+                <label><input type="checkbox" name="features" value="value">value</label>
+            </fieldset>
+
+            <label for="review">Review</label>
+            <textarea id="review" name="review"></textarea>
+
+            <label for="username">Name</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="submit review">
+
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> | Merari Miriam Gonzalez | Mexico 🦅</p>
+        <p><span id="lastModified"></span></p>
+
+    </footer>
 </body>
 </html>
