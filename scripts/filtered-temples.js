@@ -98,18 +98,18 @@ function createTempleCard(temple) {
     name.textContent = temple.templeName;
 
     const location = document.createElement("p");
-    location.textContent = 'Location: ${temple.location}';
+    location.textContent = `Location: ${temple.location}`;
 
     const dedicated = document.createElement("p");
-    dedicated.textContent = 'Dedicated: ${temple.dedicated}';
+    dedicated.textContent = `Dedicated: ${temple.dedicated}`;
 
     const area = document.createElement("p");
-    area.textContent = 'Area: ${temple.area} sq ft';
+    area.textContent = `Area: ${temple.area} sq ft`;
 
     card.appendChild(img);
     card.appendChild(name);
     card.appendChild(location);
-    card.appendChild(dedication);
+    card.appendChild(dedicated);
     card.appendChild(area);
 
     return card;
@@ -142,7 +142,7 @@ document.querySelector("#large").addEventListener("click", () => {
     displayTemples(temples.filter(t => t.area > 90000));
 });
 
-document.querySelector("#Small").addEventListener("click", () => {
+document.querySelector("#small").addEventListener("click", () => {
     displayTemples(temples.filter(t => t.area < 10000));
 });
 
