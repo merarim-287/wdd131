@@ -63,7 +63,27 @@ const temples = [
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
-    // Add more temple objects here...
+    {
+        templeName: "Aba Nigeria Temple",
+        location: "Aba, Nigeria",
+        dedicated: "2005, August, 7",
+        area: 11500,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5087-main.jpg"
+    },
+    {
+        templeName: "Abidjan Ivory Coast Temple",
+        location: "Cocody, Abidjan",
+        dedicated: "2025, May, 25",
+        area: 17362,
+        imageUrl:"https://churchofjesuschristtemples.org/assets/img/temples/abidjan-ivory-coast-temple/abidjan-ivory-coast-temple-58993-main.jpg"
+    },
+    {
+        templeName: "Accra Ghana Temple",
+        location: "Accra Ghana",
+        dedicated: "2004, January, 11",
+        area: 17500,
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-13760-main.jpg"
+    }
 ];
 
 document.getElementById("currentyear").textContent = new Date().getFullYear();
