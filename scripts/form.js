@@ -25,3 +25,15 @@ const products = [
             averagerating: 5.0
 }
 ];
+
+const productSelect = document.querySelector("#product");
+
+products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    productSelect.appendChild(option);
+});
+
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").innerHTML = document.lastModified;
