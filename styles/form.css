@@ -15,7 +15,7 @@ body {
 header {
     text-align: center;
     padding: 1rem;
-    background-color: gray;
+    background-color: rgb(168, 163, 163);
     color: black;
     border-radius: 5px;
     margin-bottom: 1.5rem;
@@ -27,7 +27,7 @@ main {
     background: rgb(212, 205, 205);
     padding: 2rem;
     border-radius: 5px;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 2px 2px 5px rgb(168, 163, 163);
 }
 
 form label {
@@ -57,7 +57,7 @@ input {
     margin-top: 2rem;
     width: 100%;
     padding: 1rem;
-    background-color: gray;
+    background-color: rgb(168, 163, 163);
     color: white;
     border-radius: 5px;
     font-size: 1rem;
@@ -67,7 +67,7 @@ input {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: gray;
+    background-color: rgb(168, 163, 163);
     color: white;
     border-radius: 5px;
     margin-bottom: 1.5rem;
