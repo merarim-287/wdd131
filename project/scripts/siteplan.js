@@ -30,3 +30,16 @@ function lazyLoadImages() {
 }
 
 lazyLoadImages();
+
+function highlightService(id) {
+    const service = document.getElementById(id);
+
+    if (service) {
+        service.classList.toggle("hightlight");
+    }
+}
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" })
+}
+
