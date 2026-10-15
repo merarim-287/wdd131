@@ -86,5 +86,65 @@ const temples = [
     }
 ];
 
+function createTempleCard(temple) {
+    const card = document.createElement("figure");
+
+    const img = document.createElement("img");
+    img.src = temple.imageUrl;
+    img.alt = temple.templeName;
+    img.loading = "lazy";
+
+    const name = document.createElement("figcaption");
+    name.textContent = temple.templeName;
+
+    const location = document.createElement("p");
+    location.textContent = 'Location: ${temple.location}';
+
+    const dedicated = document.createElement("p");
+    dedicated.textContent = 'Dedicated: ${temple.dedicated}';
+
+    const area = document.createElement("p");
+    area.textContent = 'Area: ${temple.area} sq ft';
+
+    card.appendChild(img);
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedication);
+    card.appendChild(area);
+
+    return card;
+}
+
+const container = document.querySelector("#temple-cards");
+
+function displayTemples(list) {
+    container.innerHTML = "";
+    list.forEach(temple => {
+        container.appendChild(createTempleCard(temple));
+    });
+}
+
+displayTemples(temples);
+
+document.querySelector('#home').addEventListener("click", () => {
+    displayTemples(temples);
+});
+
+document.querySelector("#old").addEventListener("click", () => {
+    displayTemples(temples.filter(t => parseInt(t.dedicated) < 1900));
+});
+
+document.querySelector("#new").addEventListener("click", () => {
+    displayTemples(temples.filter(t => parseInt(t.dedicated) > 2000));
+});
+
+document.querySelector("#large").addEventListener("click", () => {
+    displayTemples(temples.filter(t => t.area > 90000));
+});
+
+document.querySelector("#Small").addEventListener("click", () => {
+    displayTemples(temples.filter(t => t.area < 10000));
+});
+
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").innerHTML = document.lastModified;
