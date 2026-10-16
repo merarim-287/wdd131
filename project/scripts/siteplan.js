@@ -1,8 +1,4 @@
-function setFooterDates() {
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").innerHTML = document.lastModified;
-}
-setFooterDates();
+
 
 function lazyLoadImages() {
     const images = document.querySelectorAll("img[data-src]");
@@ -19,7 +15,7 @@ function lazyLoadImages() {
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if (entry.isINtersecting) {
+            if (entry.isIntersecting) {
                 loadImage(entry.target);
                 observer.unobserve(entry.target);
             }
@@ -35,16 +31,21 @@ function highlightService(id) {
     const service = document.getElementById(id);
 
     if (service) {
-        service.classList.toggle("hightlight");
+        service.classList.toggle("highlight");
     }
 }
 
 function scrollToTop() {
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function toggleMenu() {
-    const.navList = document.querySelector("nav ul");
+    const navList = document.querySelector("nav ul");
     navList.classList.toggle("open");
 }
 
+function setFooterDates() {
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").innerHTML = document.lastModified;
+}
+setFooterDates();
