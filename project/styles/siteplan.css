@@ -64,6 +64,10 @@ nav ul {
     gap: 1rem;
 }
 
+.hamburger {
+    display: none;
+}
+
 .hero {
     position: relative;
     margin: 0;
@@ -295,6 +299,17 @@ footer button {
 }
 
 @media (max-width: 600px) {
+
+    .hamburger {
+        display: block;
+        font-size: 3rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: grabbing;
+        margin-left: 1rem;
+    }
+
     header, footer {
         text-align: center;
         padding: 1rem;
@@ -304,26 +319,44 @@ footer button {
         display: none;
         flex-direction: column;
         gap: 1rem;
-        background-color: white;
+        background-color: var(--color-1);
         padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0,0.1);
+        border-radius: 5px;
     }
     
     nav ul.open {
         display: flex;
     }
 
-    .hamburguer .hamburguer {
-        display: flex;
-        font-size: 2rem;
-        background: none;
-        border: none;
-        cursor: grabbing;
-        margin-left: auto;
+    nav {
+        position: relative;
+        z-index: 2000;
     }
 
-    .grid {
+    .hero {
+        position: relative;
+    }
+
+    .floating-p, .potions-p {
+        position: static;
+        transform: none;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .potions {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 2rem;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .hero img.alchemist {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        margin: 2rem auto;
         display: block;
     }
 
