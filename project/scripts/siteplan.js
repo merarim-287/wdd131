@@ -79,8 +79,8 @@ const trailContainer = document.querySelector('.cursor-trail');
 document.addEventListener('mousemove', (e) => {
     const sparkle = document.createElement('span');
 
-    sparkle.style.left = e.pageX + "px";
-    sparkle.style.top = e.pageY + "px";
+    sparkle.style.left = e.clientX + "px";
+    sparkle.style.top = e.clientY + "px";
 
     const size = Math.random() * 6 + 4;
     sparkle.style.width = size + "px";
