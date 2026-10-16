@@ -44,6 +44,37 @@ function toggleMenu() {
     navList.classList.toggle("open");
 }
 
+window.addEventListener("scroll", () => {
+    document.querySelector(".hero img:first-child").style.transform =
+        `translateY(${window.scrollY * 0.2}px)`;
+});
+
+const sparkleContainer = document.querySelector('.sparkles');
+
+function createSparkle() {
+  const sparkle = document.createElement('span');
+
+  
+  sparkle.style.left = Math.random() * 100 + "vw";
+
+  
+  const size = Math.random() * 8 + 4; 
+  sparkle.style.width = size + "px";
+  sparkle.style.height = size + "px";
+
+  
+  sparkle.style.animationDuration = (Math.random() * 4 + 4) + "s";
+
+  sparkleContainer.appendChild(sparkle);
+
+  
+  setTimeout(() => sparkle.remove(), 6000);
+}
+
+
+setInterval(createSparkle, 300);
+
+
 function setFooterDates() {
     document.getElementById("currentyear").textContent = new Date().getFullYear();
     document.getElementById("lastModified").innerHTML = document.lastModified;
