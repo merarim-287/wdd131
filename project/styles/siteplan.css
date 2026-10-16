@@ -306,13 +306,17 @@ footer button {
         background: none;
         border: none;
         color: white;
-        cursor: grabbing;
+        cursor: pointer;
         margin-left: 1rem;
     }
 
-    header, footer {
-        text-align: center;
-        padding: 1rem;
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        position: relative;
+        z-index: 2000;
     }
 
     nav ul {
@@ -328,36 +332,63 @@ footer button {
         display: flex;
     }
 
-    nav {
-        position: relative;
-        z-index: 2000;
+    nav li a {
+        font-size: 1.5rem;
+        text-shadow: 0 0 1px gray;
+        color: white;
     }
 
     .hero {
         position: relative;
+        min-height: 600px;
     }
 
-    .floating-p, .potions-p {
+    .floating-p {
+        position: absolute;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        text-align: center;
+    }
+
+    .floating-p h2 {
+        font-size: 2rem;
+        color: white;
+        text-shadow: 0 0 3px black;
+    }
+
+    .floating-p p {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .hero img.alchemist {
+        position: absolute !important;
+        bottom: 10% !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 200px !important;
+        height: auto !important;
+        z-index: 10 !important;
+    }
+
+    .hero img.alchemist:hover {
+        transform: none;
+        cursor: pointer;
+    }
+
+    .potions, .potions-p {
         position: static;
         transform: none;
-        text-align: center;
-        padding: 1rem;
     }
 
     .potions {
         display: grid;
         grid-template-columns: 1fr;
-        margin-top: 2rem;
         gap: 2rem;
         justify-items: center;
-    }
-
-    .hero img.alchemist {
-        position: static;
-        width: 100%;
-        max-width: 300px;
-        margin: 2rem auto;
-        display: block;
+        margin-top: 2rem;
     }
 
     img {
