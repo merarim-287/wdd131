@@ -43,3 +43,8 @@ function scrollToTop() {
     window.scrollTo({ top: 0, behavior: "smooth" })
 }
 
+function toggleMenu() {
+    const.navList = document.querySelector("nav ul");
+    navList.classList.toggle("open");
+}
+
