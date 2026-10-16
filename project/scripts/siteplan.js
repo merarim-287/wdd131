@@ -74,6 +74,27 @@ function createSparkle() {
 
 setInterval(createSparkle, 300);
 
+const trailContainer = document.querySelector('.cursor-trail');
+
+document.addEventListener('mousemove', (e) => {
+    const sparkle = document.createElement('span');
+
+    sparkle.style.left = e.pageX + "px";
+    sparkle.style.top = e.pageY + "px";
+
+    const size = Math.random() * 6 + 4;
+    sparkle.style.width = size + "px";
+    sparkle.style.height = size + "px";
+
+    const colors = ["#f8e1ff", "#d9b3ff", "#b8e8ff", "#ffe3f4"];
+    sparkle.style.background = `radial-gradient(circle, ${colors[Math.floor(Math.random() * colors.length)]} 40%, rgba(255,255,255,0) 70%)`;
+
+    trailContainer.appendChild(sparkle);
+
+    setTimeout(() => sparkle.remove(), 800);
+});
+
+
 
 function setFooterDates() {
     document.getElementById("currentyear").textContent = new Date().getFullYear();
